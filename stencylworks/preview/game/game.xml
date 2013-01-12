@@ -7,12 +7,7 @@
         <group desc="" id="1" name="Test" type="tileset">
             <r id="0"/>
         </group>
-        <group desc="" id="2" name="Level 01" type="tileset">
-            <r id="3"/>
-        </group>
-        <group desc="" id="3" name="Level01" type="scene">
-            <r id="0"/>
-        </group>
+        <group desc="" id="2" name="Level 01" type="tileset"/>
     </folders>
     <packs/>
     <groups/>
@@ -55,16 +50,9 @@
         <poly id="18" name="Tri 60R Inv" pts="0.5,0.0#1.0,1.0#1.0,0.0"/>
         <poly id="21" name="Tri 60-2L Inv" pts="0.0,0.0#0.0,1.0#0.5,1.0#1.0,0.0"/>
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
-        <poly id="23" name="Right_Toit" pts="0.0,0.0#0.0,1.0#0.6666667,0.9916667"/>
-        <poly id="22" name="Left_Toit" pts="0.5833333,1.0#1.0,1.0#1.0083333,0.35"/>
-        <poly id="25" name="ladder_left" pts="0.9916667,0.11666667#0.05,1.0#1.0,1.0"/>
-        <poly id="24" name="ladder_right" pts="0.008333334,0.075#0.0,1.0#0.9,1.0"/>
-        <poly id="27" name="bout_poutre_right" pts="0.0,0.0#-0.008333334,0.11666667#0.15,0.11666667#0.14166667,0.0"/>
-        <poly id="26" name="poutre" pts="0.0,0.0#0.0,0.14166667#1.0,0.14166667#1.0,0.0"/>
-        <poly id="28" name="bout_poutre_left" pts="0.84166664,0.0#0.84166664,0.13333334#1.0,0.14166667#1.0083333,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="1,0,3" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="1,0" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>

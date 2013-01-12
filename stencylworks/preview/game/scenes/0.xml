@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="3" extheight="28992" extwidth="38592" extx="-96" exty="-96" format="2.1" gravx="-0.0" gravy="85.0" height="28800" id="0" name="Test_Scene" revision="" savecount="0" tiled="1" tileh="96" tilew="96" type="standard" width="38400">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="0" green="204" red="153"/>
+    <backgrounds/>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="1" name="Knight 1" sx="1.0" sy="1.0" x="135" y="321" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain>
+        <p pts="16,384.0,192.0,384.0,96.0,480.0,96.0,480.0,0.0,576.0,0.0,576.0,96.0,672.0,96.0,672.0,192.0,768.0,192.0,768.0,288.0,960.0,288.0,960.0,384.0,0.0,384.0,0.0,288.0,288.0,288.0,288.0,192.0" x="96.0" y="480.0"/>
+    </terrain>
+</scene>
