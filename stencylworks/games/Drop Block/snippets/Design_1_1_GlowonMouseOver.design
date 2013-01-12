@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="39" y="94">
+            <group id="-1">
+                <if comment="false" x="50" y="119">
+                    <group id="-1">
+                        <comment-long comment="false" x="61" y="157">
+                            <int id="0" val="The &amp;lt;not&amp;lt;Growing&amp;gt;&amp;gt; block is important here. Without it, Stencyl would continuously try to add the glow effect to our actor, even if the actor is already growing."/>
+                        </comment-long>
+                        <scaleTo comment="false" x="61" y="237">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="110"/>
+                            <int id="2" val="110"/>
+                            <int id="3" val=".1"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                        <set-val-1-1 comment="false" x="61" y="264">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-1-1>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <get-val-1-1 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                        <amousestate comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </amousestate>
+                    </and>
+                </if>
+                <if comment="false" x="50" y="301">
+                    <group id="-1">
+                        <scaleTo comment="false" x="61" y="344">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="100"/>
+                            <int id="2" val="100"/>
+                            <int id="3" val=".1"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                        <set-val-1-1 comment="false" x="61" y="371">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-1-1>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-1-1 comment="false" id="0" x="0" y="0"/>
+                        <not comment="false" id="1" x="0" y="0">
+                            <amousestate comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="3"/>
+                            </amousestate>
+                        </not>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="430">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="503">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

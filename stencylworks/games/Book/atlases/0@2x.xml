@@ -1,0 +1,4 @@
+<t p="atlas0@2x.png">
+	<s n="inner-joystick" x="0" y="0" w="150" h="150" />
+	<s n="outer-joystick" x="154" y="0" w="200" h="200" />
+</t>

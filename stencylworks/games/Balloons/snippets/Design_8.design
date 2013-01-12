@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<draw comment="false" x="60" y="370">
+<group id="-1"/>
+</draw>
+</group>
+<group id="1">
+<step comment="false" x="60" y="150">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<init comment="false" x="60" y="40">
+<group id="-1"/>
+</init>
+</group>
+<group id="3">
+<collide comment="false" x="60" y="260">
+<group id="-1">
+<die comment="false" x="71" y="285">
+<ACTOR eid="this" id="0"/>
+</die>
+</group>
+</collide>
+</group>
+<group id="-1"/>
+</groups>

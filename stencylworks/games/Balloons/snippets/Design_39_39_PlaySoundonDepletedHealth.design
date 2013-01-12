@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="60" y="40">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="60" y="150">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="60" y="260">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="60" y="370">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="464" y="283">
+<group id="-1">
+<play-sound3 comment="false" x="475" y="308">
+<SOUND eid="var" id="0" vid="1"/>
+</play-sound3>
+</group>
+<int id="0" val="healthDepleted"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

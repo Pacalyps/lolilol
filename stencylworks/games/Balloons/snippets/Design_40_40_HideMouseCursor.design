@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<if comment="false" x="26" y="40">
+<group id="-1">
+<mousedisp comment="false" x="37" y="65">
+<int id="0" val="1"/>
+</mousedisp>
+</group>
+<get-val-40-1 comment="false" id="0" x="0" y="0"/>
+</if>
+<else comment="false" x="26" y="104">
+<group id="-1">
+<mousedisp comment="false" x="37" y="124">
+<int id="0" val="0"/>
+</mousedisp>
+</group>
+</else>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="191">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<draw comment="false" x="15" y="264">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="73">
+                            <group eventID="-1" id="-1">
+                                <set-val-2-4 comment="false" x="48" y="103">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-2-4>
+                                <repeat comment="false" x="48" y="128">
+                                    <group eventID="-1" id="-1">
+                                        <create-recycled-actor comment="false" x="59" y="153">
+                                            <get-val-2-1 comment="false" id="0" x="0" y="0"/>
+                                            <minus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-xy>
+                                                <int id="1" val="4"/>
+                                            </minus>
+                                            <minus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="3"/>
+                                                </get-xy>
+                                                <int id="1" val="4"/>
+                                            </minus>
+                                            <int id="3" val="0"/>
+                                        </create-recycled-actor>
+                                        <setvel comment="false" x="59" y="198">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <randint comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="180"/>
+                                                <int id="1" val="360"/>
+                                            </randint>
+                                            <get-val-2-3 comment="false" id="2" x="0" y="0"/>
+                                        </setvel>
+                                        <if comment="false" x="59" y="230">
+                                            <group eventID="-1" id="-1">
+                                                <set-val-2-4 comment="false" x="70" y="260">
+                                                    <false comment="false" id="0" x="0" y="0"/>
+                                                </set-val-2-4>
+                                            </group>
+                                            <eq comment="false" id="0" x="0" y="0">
+                                                <loopindex comment="false" id="0" x="0" y="0"/>
+                                                <get-val-2-2 comment="false" id="1" x="0" y="0"/>
+                                            </eq>
+                                        </if>
+                                    </group>
+                                    <get-val-2-2 comment="false" id="0" x="0" y="0"/>
+                                </repeat>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-2-4 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                    <amousestate comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </amousestate>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

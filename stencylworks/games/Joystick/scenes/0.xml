@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="2" desc="" format="1.0" gravx="-0.0" gravy="0.0" height="640" id="0" name="Main" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="960">
+    <layers>
+        <layer color="0,0,255" id="1" name="Layer 1" order="1"/>
+        <layer color="100,168,234" id="0" name="Layer 0" order="2"/>
+    </layers>
+    <grad-bg b1="51" b2="0" g1="51" g2="0" r1="51" r2="0"/>
+    <backgrounds>
+        <ref id="17"/>
+    </backgrounds>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="3" c="false" group="3" id="9" sx="1.0" sy="1.0" x="121" y="470" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="9" sx="1.0" sy="1.0" x="390" y="384" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="9" sx="1.0" sy="1.0" x="550" y="481" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="9" sx="1.0" sy="1.0" x="671" y="118" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="20" sx="1.0" sy="1.0" x="731" y="249" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="3" id="20" sx="1.0" sy="1.0" x="793" y="455" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="20" sx="1.0" sy="1.0" x="153" y="358" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="3" id="20" sx="1.0" sy="1.0" x="315" y="494" z="0"/>
+        <actor a="-223.91841" aid="11" c="false" group="0" id="28" sx="1.0" sy="1.0" x="156" y="126" z="0"/>
+        <actor a="0.0" aid="12" c="false" group="3" id="30" sx="1.0" sy="1.0" x="378" y="221" z="1"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="9">
+            <prop id="1" list="0" val="0"/>
+            <prop id="2" list="0" val="false"/>
+        </s>
+    </snippets>
+    <terrain>
+        <p pts="4,896.0,0.0,0.0,0.0,0.0,576.0,896.0,576.0" x="32.0" y="32.0"/>
+        <p pts="4,0.0,640.0,0.0,0.0,960.0,0.0,960.0,640.0" x="0.0" y="0.0"/>
+    </terrain>
+</scene>

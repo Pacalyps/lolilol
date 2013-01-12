@@ -1,0 +1,303 @@
+
+
+
+[LOG] Mirroring logs to the standard output...
+[LOG] Current Working Directory: C:\Program Files (x86)\Stencyl
+[LOG] Reading... global
+[LOG] LANGUAGE WARNING: Empty Line.
+[LOG] Finished reading lang/en/global.lang
+[LOG] Reading... prefs
+[LOG] Finished reading lang/en/prefs.lang
+[LOG] Reading... gamedg
+[LOG] Finished reading lang/en/gamedg.lang
+[LOG] Reading... spritedg
+[LOG] Finished reading lang/en/spritedg.lang
+[LOG] Reading... tset
+[LOG] Finished reading lang/en/tset.lang
+[LOG] Reading... actor
+[LOG] Finished reading lang/en/actor.lang
+[LOG] Reading... scene
+[LOG] Finished reading lang/en/scene.lang
+[LOG] Reading... snippet
+[LOG] Finished reading lang/en/snippet.lang
+[LOG] Reading... blocks
+[LOG] Finished reading lang/en/blocks.lang
+[LOG] Reading... blockhelp
+[LOG] Finished reading lang/en/blockhelp.lang
+[LOG] Initializing Stencyl
+[LOG] Failed to load Growl library
+[LOG] Activated: Welcome Center
+[LOG] Checking workspace writability and location: temp
+[LOG] The Stencyl workspace is being set to: 
+[LOG] Copy directory from: prefs to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\prefs
+[LOG] Copy Duration: 101
+[LOG] Copy directory from: games to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games
+[LOG] Copy directory from: games\Alien Approach to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach
+[LOG] Copy directory from: games\Alien Approach\libraries to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\libraries
+[LOG] Copy directory from: games\Alien Approach\libraries\flash to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\libraries\flash
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: games\Alien Approach\libraries\ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\libraries\ios
+[LOG] Copy Duration: 1
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: games\Alien Approach\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\linked
+[LOG] Copy Duration: 35
+[LOG] Copy directory from: games\Alien Approach\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\resources
+[LOG] Copy Duration: 202
+[LOG] Copy directory from: games\Alien Approach\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\scenes
+[LOG] Copy Duration: 16
+[LOG] Copy directory from: games\Alien Approach\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\snippets
+[LOG] Copy Duration: 39
+[LOG] Copy Duration: 675
+[LOG] Copy directory from: games\Balloons to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Balloons
+[LOG] Copy directory from: games\Balloons\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Balloons\linked
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: games\Balloons\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Balloons\resources
+[LOG] Copy Duration: 87
+[LOG] Copy directory from: games\Balloons\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Balloons\scenes
+[LOG] Copy Duration: 12
+[LOG] Copy directory from: games\Balloons\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Balloons\snippets
+[LOG] Copy Duration: 138
+[LOG] Copy Duration: 276
+[LOG] Copy directory from: games\Book to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book
+[LOG] Copy directory from: games\Book\atlases to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\atlases
+[LOG] Copy Duration: 37
+[LOG] Copy directory from: games\Book\behavior-ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\behavior-ios
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: games\Book\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\linked
+[LOG] Copy Duration: 121
+[LOG] Copy directory from: games\Book\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\resources
+[LOG] Copy Duration: 75
+[LOG] Copy directory from: games\Book\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\scenes
+[LOG] Copy Duration: 94
+[LOG] Copy directory from: games\Book\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\snippets
+[LOG] Copy Duration: 19
+[LOG] Copy Duration: 716
+[LOG] Copy directory from: games\Brick Block to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Brick Block
+[LOG] Copy directory from: games\Brick Block\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Brick Block\linked
+[LOG] Copy Duration: 5
+[LOG] Copy directory from: games\Brick Block\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Brick Block\resources
+[LOG] Copy Duration: 81
+[LOG] Copy directory from: games\Brick Block\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Brick Block\scenes
+[LOG] Copy Duration: 26
+[LOG] Copy directory from: games\Brick Block\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Brick Block\snippets
+[LOG] Copy Duration: 76
+[LOG] Copy Duration: 267
+[LOG] Copy directory from: games\Catapult to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult
+[LOG] Copy directory from: games\Catapult\atlases to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\atlases
+[LOG] Copy Duration: 0
+[LOG] Copy directory from: games\Catapult\behavior-ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\behavior-ios
+[LOG] Copy Duration: 49
+[LOG] Copy directory from: games\Catapult\ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\ios
+[LOG] Copy Duration: 21
+[LOG] Copy directory from: games\Catapult\libraries to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\libraries
+[LOG] Copy directory from: games\Catapult\libraries\flash to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\libraries\flash
+[LOG] Copy Duration: 0
+[LOG] Copy directory from: games\Catapult\libraries\ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\libraries\ios
+[LOG] Copy Duration: 0
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: games\Catapult\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\linked
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: games\Catapult\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\resources
+[LOG] Copy Duration: 159
+[LOG] Copy directory from: games\Catapult\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\scenes
+[LOG] Copy Duration: 11
+[LOG] Copy directory from: games\Catapult\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\snippets
+[LOG] Copy Duration: 85
+[LOG] Copy Duration: 497
+[LOG] Copy directory from: games\Crash Course Kit to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Crash Course Kit
+[LOG] Copy directory from: games\Crash Course Kit\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Crash Course Kit\linked
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: games\Crash Course Kit\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Crash Course Kit\resources
+[LOG] Copy Duration: 35
+[LOG] Copy directory from: games\Crash Course Kit\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Crash Course Kit\scenes
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: games\Crash Course Kit\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Crash Course Kit\snippets
+[LOG] Copy Duration: 27
+[LOG] Copy Duration: 111
+[LOG] Copy directory from: games\Drop Block to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block
+[LOG] Copy directory from: games\Drop Block\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block\linked
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: games\Drop Block\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block\resources
+[LOG] Copy Duration: 26
+[LOG] Copy directory from: games\Drop Block\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block\scenes
+[LOG] Copy Duration: 18
+[LOG] Copy directory from: games\Drop Block\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block\snippets
+[LOG] Copy Duration: 35
+[LOG] Copy Duration: 139
+[LOG] Copy directory from: games\Drop Block Game to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game
+[LOG] Copy directory from: games\Drop Block Game\atlases to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\atlases
+[LOG] Copy Duration: 13
+[LOG] Copy directory from: games\Drop Block Game\behavior-ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\behavior-ios
+[LOG] Copy Duration: 10
+[LOG] Copy directory from: games\Drop Block Game\libraries to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\libraries
+[LOG] Copy directory from: games\Drop Block Game\libraries\flash to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\libraries\flash
+[LOG] Copy Duration: 0
+[LOG] Copy directory from: games\Drop Block Game\libraries\ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\libraries\ios
+[LOG] Copy Duration: 1
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: games\Drop Block Game\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\linked
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: games\Drop Block Game\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\resources
+[LOG] Copy Duration: 41
+[LOG] Copy directory from: games\Drop Block Game\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\scenes
+[LOG] Copy Duration: 12
+[LOG] Copy directory from: games\Drop Block Game\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\snippets
+[LOG] Copy Duration: 37
+[LOG] Copy Duration: 169
+[LOG] Copy directory from: games\Joystick to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick
+[LOG] Copy directory from: games\Joystick\atlases to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\atlases
+[LOG] Copy Duration: 14
+[LOG] Copy directory from: games\Joystick\behavior-ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\behavior-ios
+[LOG] Copy Duration: 12
+[LOG] Copy directory from: games\Joystick\libraries to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\libraries
+[LOG] Copy directory from: games\Joystick\libraries\flash to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\libraries\flash
+[LOG] Copy Duration: 0
+[LOG] Copy directory from: games\Joystick\libraries\ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\libraries\ios
+[LOG] Copy Duration: 0
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: games\Joystick\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\linked
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: games\Joystick\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\resources
+[LOG] Copy Duration: 84
+[LOG] Copy directory from: games\Joystick\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\scenes
+[LOG] Copy Duration: 10
+[LOG] Copy directory from: games\Joystick\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\snippets
+[LOG] Copy Duration: 35
+[LOG] Copy Duration: 206
+[LOG] Copy directory from: games\Jump and Run to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Jump and Run
+[LOG] Copy directory from: games\Jump and Run\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Jump and Run\linked
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: games\Jump and Run\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Jump and Run\resources
+[LOG] Copy Duration: 80
+[LOG] Copy directory from: games\Jump and Run\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Jump and Run\scenes
+[LOG] Copy Duration: 11
+[LOG] Copy directory from: games\Jump and Run\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Jump and Run\snippets
+[LOG] Copy Duration: 63
+[LOG] Copy Duration: 213
+[LOG] Copy directory from: games\Labyrinth to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth
+[LOG] Copy directory from: games\Labyrinth\atlases to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\atlases
+[LOG] Copy Duration: 12
+[LOG] Copy directory from: games\Labyrinth\behavior-ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\behavior-ios
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: games\Labyrinth\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\linked
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: games\Labyrinth\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\resources
+[LOG] Copy Duration: 28
+[LOG] Copy directory from: games\Labyrinth\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\scenes
+[LOG] Copy Duration: 21
+[LOG] Copy directory from: games\Labyrinth\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\snippets
+[LOG] Copy Duration: 32
+[LOG] Copy Duration: 164
+[LOG] Copy directory from: games\Platformer to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer
+[LOG] Copy directory from: games\Platformer\atlases to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\atlases
+[LOG] Copy Duration: 26
+[LOG] Copy directory from: games\Platformer\behavior-ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\behavior-ios
+[LOG] Copy Duration: 18
+[LOG] Copy directory from: games\Platformer\ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\ios
+[LOG] Copy Duration: 38
+[LOG] Copy directory from: games\Platformer\libraries to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\libraries
+[LOG] Copy directory from: games\Platformer\libraries\flash to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\libraries\flash
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: games\Platformer\libraries\ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\libraries\ios
+[LOG] Copy Duration: 1
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: games\Platformer\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\linked
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: games\Platformer\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\resources
+[LOG] Copy Duration: 97
+[LOG] Copy directory from: games\Platformer\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\scenes
+[LOG] Copy Duration: 10
+[LOG] Copy directory from: games\Platformer\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\snippets
+[LOG] Copy Duration: 48
+[LOG] Copy Duration: 290
+[LOG] Copy directory from: games\RPG Town and Dialog to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog
+[LOG] Copy directory from: games\RPG Town and Dialog\libraries to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\libraries
+[LOG] Copy directory from: games\RPG Town and Dialog\libraries\flash to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\libraries\flash
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: games\RPG Town and Dialog\libraries\ios to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\libraries\ios
+[LOG] Copy Duration: 1
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: games\RPG Town and Dialog\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\linked
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: games\RPG Town and Dialog\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\resources
+[LOG] Copy Duration: 69
+[LOG] Copy directory from: games\RPG Town and Dialog\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\scenes
+[LOG] Copy Duration: 23
+[LOG] Copy directory from: games\RPG Town and Dialog\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\snippets
+[LOG] Copy Duration: 32
+[LOG] Copy Duration: 168
+[LOG] Copy directory from: games\Run and Gun Example Game to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Run and Gun Example Game
+[LOG] Copy directory from: games\Run and Gun Example Game\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Run and Gun Example Game\linked
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: games\Run and Gun Example Game\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Run and Gun Example Game\resources
+[LOG] Copy Duration: 101
+[LOG] Copy directory from: games\Run and Gun Example Game\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Run and Gun Example Game\scenes
+[LOG] Copy Duration: 11
+[LOG] Copy directory from: games\Run and Gun Example Game\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Run and Gun Example Game\snippets
+[LOG] Copy Duration: 92
+[LOG] Copy Duration: 240
+[LOG] Copy directory from: games\Space Shooter to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Space Shooter
+[LOG] Copy directory from: games\Space Shooter\linked to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Space Shooter\linked
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: games\Space Shooter\resources to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Space Shooter\resources
+[LOG] Copy Duration: 70
+[LOG] Copy directory from: games\Space Shooter\scenes to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Space Shooter\scenes
+[LOG] Copy Duration: 12
+[LOG] Copy directory from: games\Space Shooter\snippets to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Space Shooter\snippets
+[LOG] Copy Duration: 145
+[LOG] Copy Duration: 318
+[LOG] Copy Duration: 4496
+[LOG] Copy directory from: logs to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\logs
+[LOG] Copy Duration: 29
+[LOG] Copy directory from: extensions to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\extensions
+[LOG] Copy Duration: 0
+[LOG] Copy directory from: behaviors to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors
+[LOG] Copy directory from: behaviors\Controls to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Controls
+[LOG] Copy directory from: behaviors\Controls\Actor to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Controls\Actor
+[LOG] Copy Duration: 50
+[LOG] Copy directory from: behaviors\Controls\Scene to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Controls\Scene
+[LOG] Copy Duration: 0
+[LOG] Copy Duration: 54
+[LOG] Copy directory from: behaviors\Eye Candy to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Eye Candy
+[LOG] Copy directory from: behaviors\Eye Candy\Actor to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Eye Candy\Actor
+[LOG] Copy Duration: 11
+[LOG] Copy directory from: behaviors\Eye Candy\Scene to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Eye Candy\Scene
+[LOG] Copy Duration: 4
+[LOG] Copy Duration: 18
+[LOG] Copy directory from: behaviors\Game to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Game
+[LOG] Copy directory from: behaviors\Game\Actor to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Game\Actor
+[LOG] Copy Duration: 17
+[LOG] Copy directory from: behaviors\Game\Scene to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Game\Scene
+[LOG] Copy Duration: 33
+[LOG] Copy Duration: 54
+[LOG] Copy directory from: behaviors\GUI to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\GUI
+[LOG] Copy directory from: behaviors\GUI\Actor to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\GUI\Actor
+[LOG] Copy Duration: 7
+[LOG] Copy directory from: behaviors\GUI\Scene to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\GUI\Scene
+[LOG] Copy Duration: 1
+[LOG] Copy Duration: 11
+[LOG] Copy directory from: behaviors\Mobile to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Mobile
+[LOG] Copy directory from: behaviors\Mobile\Actor to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Mobile\Actor
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: behaviors\Mobile\Scene to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Mobile\Scene
+[LOG] Copy Duration: 0
+[LOG] Copy Duration: 28
+[LOG] Copy directory from: behaviors\Motion to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Motion
+[LOG] Copy directory from: behaviors\Motion\Actor to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Motion\Actor
+[LOG] Copy Duration: 72
+[LOG] Copy directory from: behaviors\Motion\Scene to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Motion\Scene
+[LOG] Copy Duration: 1
+[LOG] Copy Duration: 77
+[LOG] Copy directory from: behaviors\Rules to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Rules
+[LOG] Copy directory from: behaviors\Rules\Actor to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Rules\Actor
+[LOG] Copy Duration: 1786
+[LOG] Copy directory from: behaviors\Rules\Scene to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Rules\Scene
+[LOG] Copy Duration: 7
+[LOG] Copy Duration: 1914
+[LOG] Copy directory from: behaviors\Utilities to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Utilities
+[LOG] Copy directory from: behaviors\Utilities\Actor to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Utilities\Actor
+[LOG] Copy Duration: 18
+[LOG] Copy directory from: behaviors\Utilities\Scene to: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\behaviors\Utilities\Scene
+[LOG] Copy Duration: 14
+[LOG] Copy Duration: 35
+[LOG] Copy Duration: 2195

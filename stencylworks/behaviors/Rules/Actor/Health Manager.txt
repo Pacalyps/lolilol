@@ -1,0 +1,1 @@
+Give an actor "health" and manage it.

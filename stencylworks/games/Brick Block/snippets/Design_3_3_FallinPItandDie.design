@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups>
+<group id="2">
+<draw comment="false" x="15" y="340">
+<group id="-1"/>
+</draw>
+</group>
+<group id="1">
+<step comment="false" x="15" y="95">
+<group id="-1">
+<if comment="false" x="26" y="120">
+<group id="-1">
+<if comment="false" x="37" y="158">
+<group id="-1">
+<scene-reload comment="false" x="48" y="188">
+<int id="0" val="0"/>
+<int id="1" val="0.5"/>
+<int id="2" val="1"/>
+<int id="3" val="0.5"/>
+</scene-reload>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<is-transitioning comment="false" id="0" x="0" y="0"/>
+</not>
+</if>
+</group>
+<moreeq comment="false" id="0" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+<sceneh comment="false" id="1" x="0" y="0"/>
+</moreeq>
+</if>
+</group>
+</step>
+</group>
+<group id="3">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<ignore-screen-tolerance comment="false" x="26" y="40">
+<ACTOR eid="this" id="0"/>
+</ignore-screen-tolerance>
+</group>
+</init>
+</group>
+<group id="0">
+<collide comment="false" x="15" y="267">
+<group id="-1"/>
+</collide>
+</group>
+<group id="-1"/>
+</groups>

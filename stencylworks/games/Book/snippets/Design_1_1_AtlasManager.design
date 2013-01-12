@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <do-ios comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <for-each comment="false" x="37" y="60">
+                            <group eventID="-1" id="-1">
+                                <code-long comment="false" x="48" y="85">
+                                    <int id="0" val="[[Assets get] unloadAtlas:[self asNumber:item]];"/>
+                                </code-long>
+                            </group>
+                            <get-val-1-1 comment="false" id="0" x="0" y="0"/>
+                        </for-each>
+                        <for-each comment="false" x="37" y="257">
+                            <group eventID="-1" id="-1">
+                                <code-long comment="false" x="48" y="282">
+                                    <int id="0" val="[[Assets get] loadAtlas:[self asNumber:item]];"/>
+                                </code-long>
+                            </group>
+                            <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                        </for-each>
+                    </group>
+                </do-ios>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

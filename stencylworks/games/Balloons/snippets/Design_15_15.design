@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <step comment="false" x="60" y="150">
+            <group id="-1">
+                <set-val-15-1 comment="false" x="71" y="175">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <mousexy comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0"/>
+                        </mousexy>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </get-xy>
+                    </minus>
+                </set-val-15-1>
+                <set-val-15-2 comment="false" x="71" y="213">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <mousexy comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </mousexy>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </get-xy>
+                    </minus>
+                </set-val-15-2>
+                <set-val-15-3 comment="false" x="71" y="251">
+                    <to-degreesradians comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <atan2 comment="false" id="1" x="0" y="0">
+                            <get-val-15-2 comment="false" id="0" x="0" y="0"/>
+                            <get-val-15-1 comment="false" id="1" x="0" y="0"/>
+                        </atan2>
+                    </to-degreesradians>
+                </set-val-15-3>
+                <setangle comment="false" x="71" y="294">
+                    <ACTOR eid="this" id="0"/>
+                    <plus comment="false" id="1" x="0" y="0">
+                        <get-val-15-3 comment="false" id="0" x="0" y="0"/>
+                        <get-val-15-4 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                </setangle>
+            </group>
+        </step>
+    </group>
+    <group id="1">
+        <draw comment="false" x="63" y="525">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="2">
+        <print comment="false" x="747" y="321">
+            <tostring comment="false" id="0" x="0" y="0">
+                <get-val-15-3 comment="false" id="0" x="0" y="0"/>
+            </tostring>
+        </print>
+    </group>
+    <group id="3">
+        <collide comment="false" x="63" y="441">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="4">
+        <init comment="false" x="60" y="40">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="-1"/>
+</groups>

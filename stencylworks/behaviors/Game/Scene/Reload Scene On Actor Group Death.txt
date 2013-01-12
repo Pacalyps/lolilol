@@ -1,0 +1,1 @@
+Reloads the scene when a member of an actor group dies.

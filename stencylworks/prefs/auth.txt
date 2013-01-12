@@ -1,0 +1,2 @@
+global.user=jojva
+global.password=860d795f2adf93a62d59001f5ad67c3e96651375

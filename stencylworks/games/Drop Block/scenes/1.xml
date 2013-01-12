@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" format="1.0" gravx="-0.0" gravy="85.0" height="480" id="1" name="Level 2" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+<layers>
+<layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+</layers>
+<color-bg blue="0" green="0" red="0"/>
+<backgrounds>
+<ref id="7"/>
+</backgrounds>
+<foregrounds/>
+<joints/>
+<regions>
+<region b="64" g="64" h="13" id="0" name="Goal" pts="4,74.0,0.0,74.0,13.0,0.0,13.0,0.0,0.0" r="64" type="box" w="74" x="538" y="438"/>
+</regions>
+<terrainRegions/>
+<actors>
+<actor a="0.0" aid="2" c="false" group="3" id="2" x="544" y="64" z="0"/>
+<actor a="0.0" aid="6" c="false" group="3" id="0" x="544" y="32" z="0"/>
+<actor a="0.0" aid="7" c="false" group="3" id="9" x="416" y="256" z="0"/>
+<actor a="0.0" aid="8" c="false" group="3" id="9" x="352" y="256" z="0"/>
+<actor a="0.0" aid="9" c="false" group="3" id="9" x="288" y="256" z="0"/>
+<actor a="0.0" aid="10" c="false" group="3" id="9" x="224" y="256" z="0"/>
+<actor a="0.0" aid="11" c="false" group="3" id="9" x="160" y="256" z="0"/>
+<actor a="0.0" aid="12" c="false" group="3" id="9" x="96" y="256" z="0"/>
+<actor a="0.0" aid="13" c="false" group="3" id="11" x="600" y="8" z="0"/>
+</actors>
+<snippets>
+<s enabled="true" id="4">
+<prop id="1" val="6"/>
+<prop id="2" val="0"/>
+<prop id="3" val="false"/>
+<prop id="4" val="false"/>
+<prop id="5" val="0"/>
+</s>
+</snippets>
+<terrain>
+<p pts="8,0.0,128.0,0.0,0.0,32.0,0.0,32.0,32.0,64.0,64.0,448.0,64.0,480.0,96.0,480.0,128.0" x="0.0" y="256.0"/>
+<p pts="8,32.0,0.0,32.0,32.0,96.0,32.0,96.0,0.0,128.0,0.0,128.0,64.0,0.0,64.0,0.0,0.0" x="512.0" y="416.0"/>
+<p pts="5,0.0,96.0,96.0,0.0,160.0,0.0,160.0,128.0,0.0,128.0" x="480.0" y="160.0"/>
+</terrain>
+</scene>

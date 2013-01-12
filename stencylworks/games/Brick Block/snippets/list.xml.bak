@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet attachedevent="false" class="scripts.Design_0_0_4WayControl" desc="Allows the player to move just left and right." description="Allows the player to move just left and right." design="true" drawOrder="0" id="0" language="" name="2 Way Control" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="pressedRight" hidden="true" id="19" name="pressedRight" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="pressedLeft" hidden="true" id="18" name="pressedLeft" order="0"/>
+        <control default="" desc="" dropdown="" fullname="Left Control" hidden="false" id="7" name="controlLeft" order="6"/>
+        <control default="" desc="" dropdown="" fullname="Right Control" hidden="false" id="8" name="controlRight" order="7"/>
+        <number default="0.0" desc="" dropdown="Left=3&#10;Right=4" fullname="Initial Direction" hidden="false" id="9" name="dir" order="0"/>
+        <number default="18" desc="The fastest it will move." dropdown="" fullname="Top Speed" hidden="false" id="11" name="topSpeed" order="2"/>
+        <number default="0" desc="How quickly it loses speed when the key's let go." dropdown="" fullname="Slowdown Rate" hidden="false" id="12" name="decel" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_1_1_BouncingBall" desc="Makes the ball bounce off walls." description="Makes the ball bounce off walls." design="true" drawOrder="0" id="1" language="" name="Bounce off Wall" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Initial speed of the ball." dropdown="" fullname="Speed" hidden="false" id="1" name="_Speed" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="Direction" hidden="true" id="2" name="_Direction" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_2_2_BlockGotHit" desc="" description="" design="true" drawOrder="0" id="2" language="" name="Block Got Hit" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <animation default="" desc="" dropdown="" fullname="Initial State" hidden="false" id="1" name="_InitialState" order="1"/>
+        <animation default="" desc="" dropdown="" fullname="1 hit left" hidden="false" id="2" name="_1hitleft" order="2"/>
+        <animation default="" desc="" dropdown="" fullname="2 hits left" hidden="false" id="3" name="_2hitsleft" order="3"/>
+        <animation default="" desc="" dropdown="" fullname="3 hits left" hidden="false" id="4" name="_3hitsleft" order="4"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_3_3_FallinPItandDie" desc="" description="" design="true" drawOrder="0" id="3" language="" name="Fall in PIt and Die" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_5_5_PositionLimiter" desc="Prevents it from going through the walls since it's a kinematic actor." description="Prevents it from going through the walls since it's a kinematic actor." design="true" drawOrder="0" id="5" language="" name="Position Limiter" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_6_6_FadeOutandDieafterTime" desc="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." description="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." design="true" drawOrder="0" id="6" language="" name="Fade Out and Die after Time" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="1" desc="The time in seconds it takes for the actor to begin fading out.&#10;&lt;p&gt;&#10;Default: 1" dropdown="" fullname="Start Fading After" hidden="false" id="1" name="_StartFadingAfter" order="1"/>
+        <number default="3" desc="The amount of time in seconds it takes the actor to fade all the way out and die.&#10;&lt;p&gt;&#10;Default: 3" dropdown="" fullname="Fade Time" hidden="false" id="2" name="_FadeTime" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+</pack>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="-1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-9-2 comment="false" x="26" y="40">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-9-2>
+            </group>
+        </init>
+    </group>
+    <group eventID="-1" id="1">
+        <step comment="false" x="15" y="93">
+            <group eventID="-1" id="-1">
+                <set-val-9-1 comment="false" x="26" y="118">
+                    <int id="0" val="0"/>
+                </set-val-9-1>
+                <actors-of-type3 comment="false" x="26" y="138">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="165">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                    </group>
+                    <ACTORTYPE eid="9" id="0"/>
+                </actors-of-type3>
+                <actors-of-type3 comment="false" x="26" y="204">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="231">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                    </group>
+                    <ACTORTYPE eid="20" id="0"/>
+                </actors-of-type3>
+                <if comment="false" x="26" y="270">
+                    <group eventID="-1" id="-1">
+                        <set-val-9-2 comment="false" x="37" y="305">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-9-2>
+                        <play-sound4 comment="false" x="37" y="330">
+                            <int id="0" val="0"/>
+                            <SOUND eid="27" id="1"/>
+                        </play-sound4>
+                        <dolater comment="false" x="37" y="357">
+                            <group eventID="-1" id="-1">
+                                <scene-reload-new comment="false" x="48" y="384">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="0"/>
+                                    <int id="3" val="1"/>
+                                </scene-reload-new>
+                            </group>
+                            <int id="0" val="1"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-9-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </eq>
+                        <not comment="false" id="1" x="0" y="0">
+                            <get-val-9-2 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+                <set-val-9-1 comment="false" x="26" y="435">
+                    <int id="0" val="0"/>
+                </set-val-9-1>
+                <actors-of-type3 comment="false" x="26" y="455">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="482">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                    </group>
+                    <ACTORTYPE eid="28" id="0"/>
+                </actors-of-type3>
+                <if comment="false" x="26" y="521">
+                    <group eventID="-1" id="-1">
+                        <set-val-9-2 comment="false" x="37" y="556">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-9-2>
+                        <dolater comment="false" x="37" y="581">
+                            <group eventID="-1" id="-1">
+                                <scene-reload-new comment="false" x="48" y="608">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="0"/>
+                                    <int id="3" val="1"/>
+                                </scene-reload-new>
+                            </group>
+                            <int id="0" val="1"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-9-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </eq>
+                        <not comment="false" id="1" x="0" y="0">
+                            <get-val-9-2 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="-1" id="2">
+        <draw comment="false" x="866" y="446">
+            <group eventID="-1" id="-1"/>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

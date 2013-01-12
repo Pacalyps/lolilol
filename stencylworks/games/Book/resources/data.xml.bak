@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <background atlasID="1" desc="" durations="100" dx="-0.0" dy="-0.0" height="768" id="0" name="BG1" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
+    <background atlasID="2" desc="" durations="100" dx="-0.0" dy="-0.0" height="768" id="1" name="BG2" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
+</pack>

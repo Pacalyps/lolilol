@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<step comment="false" x="299" y="8">
+<group id="-1"/>
+</step>
+</group>
+<group id="1">
+<receive-message comment="false" x="16" y="471">
+<group id="-1">
+<set-val-32-3 comment="false" x="27" y="501">
+<get-val-32-1 comment="false" id="0" x="0" y="0"/>
+</set-val-32-3>
+</group>
+<get-val-32-6 comment="false" id="0" x="0" y="0"/>
+</receive-message>
+</group>
+<group id="2">
+<receive-message comment="false" x="14" y="150">
+<group id="-1">
+<if comment="false" x="25" y="180">
+<group id="-1">
+<shout comment="false" x="36" y="205">
+<ACTOR eid="this" id="0"/>
+<get-val-32-7 comment="false" id="1" x="0" y="0"/>
+</shout>
+<stop comment="false" x="36" y="237"/>
+</group>
+<get-val-32-4 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="25" y="269">
+<group id="-1">
+<minusminus comment="false" x="36" y="299">
+<int id="0" val="3"/>
+</minusminus>
+<shout comment="false" x="36" y="326">
+<ACTOR eid="this" id="0"/>
+<get-val-32-7 comment="false" id="1" x="0" y="0"/>
+</shout>
+<if comment="false" x="36" y="358">
+<group id="-1">
+<shout comment="false" x="47" y="388">
+<ACTOR eid="this" id="0"/>
+<get-val-32-8 comment="false" id="1" x="0" y="0"/>
+</shout>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<get-val-32-3 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</lesseq>
+</if>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-32-3 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</more>
+</if>
+</group>
+<get-val-32-5 comment="false" id="0" x="0" y="0"/>
+</receive-message>
+</group>
+<group id="3">
+<draw comment="false" x="445" y="8">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<init comment="false" x="12" y="72">
+<group id="-1">
+<set-val-32-3 comment="false" x="23" y="97">
+<get-val-32-2 comment="false" id="0" x="0" y="0"/>
+</set-val-32-3>
+</group>
+</init>
+</group>
+<group id="5">
+<collide comment="false" x="11" y="7">
+<group id="-1"/>
+</collide>
+</group>
+<group id="-1"/>
+</groups>

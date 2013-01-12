@@ -1,0 +1,1 @@
+Switches the scene when the number of items is zero.

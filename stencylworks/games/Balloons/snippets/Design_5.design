@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups>
+<group id="2">
+<draw x="779" y="128">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<init x="774" y="30">
+<group id="-1">
+<set-val-5-4 x="785" y="55">
+<get-val-5-6 id="0" x="0" y="0"/>
+</set-val-5-4>
+</group>
+</init>
+</group>
+<group id="6">
+<step x="780" y="220">
+<group id="-1"/>
+</step>
+</group>
+<group id="1">
+<receive-message x="56" y="31">
+<group id="-1">
+<if x="67" y="56">
+<group id="-1">
+<shout x="78" y="86">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="healthDepleted"/>
+</shout>
+</group>
+<lesseq id="0" x="0" y="0">
+<get-val-5-4 id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</lesseq>
+</if>
+</group>
+<int id="0" val="tookDamage"/>
+</receive-message>
+</group>
+<group id="3">
+<collide x="56" y="183">
+<group id="-1">
+<if x="67" y="208">
+<group id="-1">
+<stop x="78" y="241"/>
+</group>
+<has-snippet id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Invincible"/>
+</has-snippet>
+</if>
+<if x="67" y="273">
+<group id="-1">
+<stop x="78" y="316"/>
+</group>
+<and id="0" x="0" y="0">
+<hasvalue id="0" x="0" y="0">
+<int id="0" val="7"/>
+</hasvalue>
+<eq2 id="1" x="0" y="0">
+<get-val-5-7 id="0" x="0" y="0"/>
+<actor id="1" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+</actor>
+</eq2>
+</and>
+</if>
+<if x="67" y="348">
+<group id="-1">
+<set-val-5-2 x="78" y="381">
+<as-number id="0" x="0" y="0">
+<get-attribute id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Inflicts Damage"/>
+<int id="2" val="damage"/>
+</get-attribute>
+</as-number>
+</set-val-5-2>
+</group>
+<has-snippet id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Inflicts Damage"/>
+</has-snippet>
+</if>
+<else x="67" y="431">
+<group id="-1">
+<set-val-5-2 x="78" y="451">
+<get-val-5-1 id="0" x="0" y="0"/>
+</set-val-5-2>
+</group>
+</else>
+<set-val-5-7 x="67" y="488">
+<ACTOR eid="lastcollided" id="0"/>
+</set-val-5-7>
+<decrement x="67" y="515">
+<int id="0" val="4"/>
+<get-val-5-2 id="1" x="0" y="0"/>
+</decrement>
+<shout x="67" y="547">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="tookDamage"/>
+</shout>
+</group>
+</collide>
+</group>
+<group id="5">
+<receive-message x="781" y="402">
+<group id="-1">
+<increment x="792" y="427">
+<int id="0" val="4"/>
+<int id="1" val="1"/>
+</increment>
+<if x="792" y="454">
+<group id="-1">
+<set-val-5-4 x="803" y="484">
+<get-val-5-5 id="0" x="0" y="0"/>
+</set-val-5-4>
+</group>
+<more id="0" x="0" y="0">
+<get-val-5-4 id="0" x="0" y="0"/>
+<get-val-5-5 id="1" x="0" y="0"/>
+</more>
+</if>
+</group>
+<int id="0" val="heal"/>
+</receive-message>
+</group>
+<group id="0">
+<receive-message x="780" y="312">
+<group id="-1">
+<set-val-5-4 x="791" y="337">
+<get-val-5-5 id="0" x="0" y="0"/>
+</set-val-5-4>
+</group>
+<int id="0" val="restore"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

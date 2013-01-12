@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" format="1.0" gravx="-0.0" gravy="85.0" height="480" id="0" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="0" green="0" red="0"/>
+    <backgrounds>
+        <ref id="7"/>
+    </backgrounds>
+    <foregrounds/>
+    <joints/>
+    <regions>
+        <region b="64" g="64" h="15" id="0" name="Goal" pts="4,131.0,0.0,131.0,15.0,0.0,15.0,0.0,0.0" r="64" type="box" w="131" x="287" y="435"/>
+    </regions>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="2" x="0" y="64" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="2" x="32" y="64" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="2" x="64" y="64" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="2" x="160" y="224" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="2" x="160" y="192" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="0" x="47" y="32" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="2" x="160" y="160" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="2" x="320" y="352" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="3" id="2" x="352" y="352" z="0"/>
+        <actor a="0.0" aid="11" c="false" group="3" id="11" x="600" y="8" z="0"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="4">
+            <prop id="1" list="0" val="6"/>
+            <prop id="2" list="0" val="0"/>
+            <prop id="3" list="0" val="false"/>
+            <prop id="4" list="0" val="false"/>
+            <prop id="5" list="0" val="1"/>
+        </s>
+    </snippets>
+    <terrain>
+        <p pts="20,0.0,224.0,0.0,32.0,32.0,0.0,128.0,0.0,160.0,32.0,160.0,64.0,192.0,96.0,192.0,128.0,160.0,128.0,160.0,192.0,288.0,192.0,288.0,128.0,256.0,128.0,256.0,96.0,288.0,64.0,288.0,32.0,320.0,0.0,416.0,0.0,448.0,32.0,448.0,224.0" x="128.0" y="256.0"/>
+        <p pts="5,0.0,96.0,0.0,0.0,32.0,0.0,96.0,64.0,96.0,96.0" x="0.0" y="128.0"/>
+    </terrain>
+</scene>

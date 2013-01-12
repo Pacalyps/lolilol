@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="320" id="17" name="Background" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="480" xpf="1.0" ypf="1.0"/>
+    <sprite default="0" desc="" height="64" id="6" name="Ball" shared="false" width="64">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" desc="" height="12" id="14" name="Bullet" shared="false" width="9">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="12" id="0" loop="true" name="Animation 0" numframes="1" originx="4" originy="6" width="9">
+            <poly data="4,0,0,9,0,9,12,0,12" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="0" id="13" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Bullet" oid="-1" pausable="true" rest="0.0" shared="false" sprite="14" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="3">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <music desc="" id="26" loop="true" name="Bullet Sizzle" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <sprite default="0" desc="" height="99" id="16" name="Button" shared="false" width="102">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="99" id="0" loop="true" name="Animation 0" numframes="1" originx="51" originy="49" width="102">
+            <poly data="4,0,0,102,0,102,99,0,99" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="99" id="1" loop="true" name="Animation 1" numframes="1" originx="51" originy="49" width="102">
+            <poly data="4,0,0,102,0,102,99,0,99" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="9" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Enemy" oid="-1" pausable="true" rest="0.0" shared="false" sprite="10" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="3">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="7">
+                <prop id="1" list="0" val="red"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="10">
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="20" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Enemy 2" oid="-1" pausable="true" rest="0.0" shared="false" sprite="21" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="3">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="7">
+                <prop id="1" list="0" val="purple"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="10">
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <music desc="" id="25" loop="true" name="Explosion" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="30" ignoreg="false" inertia="1.0" ldamp="0.0" lw="true" mass="1.0" name="Fire Button" oid="-1" pausable="true" rest="0.0" shared="false" sprite="31" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="5">
+                <prop id="1" list="0" val="normal"/>
+                <prop id="2" list="0" val="Pressed"/>
+                <prop id="3" list="0" val="action2"/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="99" id="31" name="Fire Button" shared="false" width="102">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="99" id="0" loop="true" name="normal" numframes="1" originx="51" originy="49" width="102">
+            <poly data="4,0,0,102,0,102,99,0,99" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="99" id="1" loop="true" name="Pressed" numframes="1" originx="51" originy="49" width="102">
+            <poly data="4,0,0,102,0,102,99,0,99" density="0.1" fric="0.2" gid="-1000" id="0" name="Pressed" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="22" ignoreg="false" inertia="1.0" ldamp="0.0" lw="true" mass="1.0" name="Particle" oid="-1" pausable="true" rest="0.0" shared="false" sprite="23" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="8">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="14" id="23" name="Particle" shared="false" width="14">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="14" id="0" loop="true" name="white" numframes="1" originx="7" originy="7" width="14">
+            <poly data="4,0,0,14,0,14,14,0,14" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="14" id="1" loop="true" name="red" numframes="1" originx="7" originy="7" width="14">
+            <poly data="4,0,0,14,0,14,14,0,14" density="0.1" fric="0.2" gid="-1000" id="0" name="red" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="14" id="2" loop="true" name="purple" numframes="1" originx="7" originy="7" width="14">
+            <poly data="4,0,0,14,0,14,14,0,14" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="0" id="28" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="ship" oid="-1" pausable="true" rest="0.0" shared="false" sprite="29" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="1">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="2">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="6">
+                <prop id="1" list="0" val="13"/>
+                <prop id="8" list="0" val="0.0"/>
+                <prop id="9" list="0" val="0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="11" list="0" val="0"/>
+                <prop id="12" list="0" val="1500"/>
+                <prop id="13" list="0" val="24"/>
+                <prop id="14" list="0" val="4.5"/>
+                <prop id="15" list="0" val="6"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="7">
+                <prop id="1" list="0" val="white"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="64" id="29" name="ship" shared="false" width="64">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" width="64">
+            <poly data="4,12,0,52,0,52,64,12,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <music desc="" id="24" loop="true" name="Shoot" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <sprite atlasID="0" default="0" desc="" height="48" id="21" name="Star" shared="false" width="35">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="17" originy="24" width="35">
+            <poly data="4,0,0,35,0,35,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" desc="" height="48" id="10" name="Star" shared="false" width="35">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="17" originy="24" width="35">
+            <poly data="4,0,0,35,0,35,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <tileset across="1" atlasID="0" desc="" down="1" id="12" name="Tile" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
+    </tileset>
+    <music desc="" id="27" loop="true" name="Win" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+</pack>

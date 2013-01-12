@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet attachedevent="false" class="scripts.Design_0_0_Slingshot" desc="" description="" design="true" drawOrder="0" id="0" language="" name="Slingshot" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="112" desc="The front part of the elastic's starting point (x position relative to top left of actor)." dropdown="" fullname="Front Sling Origin X" hidden="false" id="1" name="_FrontSlingOriginX" order="1"/>
+        <number default="33" desc="The front part of the elastic's starting point (y position relative to top left of actor)." dropdown="" fullname="Front Sling Origin Y" hidden="false" id="2" name="_FrontSlingOriginY" order="2"/>
+        <number default="8" desc="How thick the front part of the elastic is. (in pixels)" dropdown="" fullname="Front Sling Thickness" hidden="false" id="4" name="_FrontSlingThickness" order="4"/>
+        <number default="64.0" desc="The back part of the elastic's starting point (x position relative to top left of actor)." dropdown="" fullname="Back Sling Origin X" hidden="false" id="5" name="_BackSlingOriginX" order="5"/>
+        <number default="30.0" desc="The back part of the elastic's starting point (y position relative to top left of actor)." dropdown="" fullname="Back Sling Origin Y" hidden="false" id="6" name="_BackSlingOriginY" order="6"/>
+        <number default="7" desc="How thick the back part of the elastic is. (in pixels)" dropdown="" fullname="Back Sling Thickness" hidden="false" id="8" name="_BackSlingThickness" order="8"/>
+        <boolean default="false" desc="" dropdown="" fullname="got a boulder" hidden="true" id="9" name="_gotaboulder" order="9"/>
+        <actor default="" desc="this is that boulder" dropdown="" fullname="the boulder that's attached" hidden="true" id="10" name="_boulderthatsattached" order="10"/>
+        <number default="0" desc="" dropdown="" fullname="Sling Middle X" hidden="true" id="11" name="_SlingMiddleX" order="11"/>
+        <number default="0" desc="" dropdown="" fullname="Sling Middle Y" hidden="true" id="12" name="_SlingMiddleY" order="12"/>
+        <number default="0" desc="" dropdown="" fullname="Firing Direction" hidden="true" id="13" name="_FiringDirection" order="13"/>
+        <number default="0" desc="" dropdown="" fullname="Boulder Radius" hidden="true" id="14" name="_BoulderRadius" order="14"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="true" desc="The direction it fires in is determined below." dropdown="" fullname="Fires in only one Direction" hidden="false" id="15" name="_FiresinonlyoneDirection" order="15"/>
+        <boolean default="false" desc="" dropdown="" fullname="expectations met" hidden="true" id="17" name="_expectationsmet" order="17"/>
+        <boolean default="true" desc="True = Right, False = Left. Only matters if the above is checked." dropdown="" fullname="Firing Direction Modifier" hidden="false" id="16" name="_FiringDirectionModifier" order="16"/>
+        <number default="0" desc="" dropdown="" fullname="SlingX" hidden="true" id="19" name="_SlingX" order="19"/>
+        <number default="100.0" desc="The maximum width of the elastic. If the maximum width is hit 100% power is applied." dropdown="" fullname="Maximum Width" hidden="false" id="18" name="_MaximumWidth" order="18"/>
+        <number default="100.0" desc="The maximum fling strength of the projectile." dropdown="" fullname="Maximum Power" hidden="false" id="21" name="_MaximumPower" order="21"/>
+        <number default="0" desc="" dropdown="" fullname="SlingY" hidden="true" id="20" name="_SlingY" order="20"/>
+        <boolean default="true" desc="If this is false then the catapult will just function as an ordinary standalone catapult. Should be true unless you're doing something totally different from the catapult kit." dropdown="" fullname="Tie in with Catapult Kit" hidden="false" id="23" name="_TieinwithCatapultKit" order="23"/>
+        <number default="5" desc="How long (in seconds) the player must wait before the camera returns to the Slingshot and can shoot again." dropdown="" fullname="Firing Delay" hidden="false" id="22" name="_FiringDelay" order="22"/>
+        <sound default="39" desc="The noise that is played when the Projectile is flung." dropdown="" fullname="Fling Noise" hidden="false" id="25" name="_FlingNoise" order="25"/>
+        <boolean default="true" desc="Keeps the firing time limit functionality when the catapult is being used standalone." dropdown="" fullname="Can Shoot (No Catapult Kit)" hidden="true" id="24" name="_CanShootNoCatapultKit" order="24"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
+            <event displayName="NoCatapultTrue" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_1_1_Projectile" desc="The behaviour that should be used for all projectiles." description="The behaviour that should be used for all projectiles." design="true" drawOrder="0" id="1" language="" name="Projectile" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="attached to catapult" hidden="true" id="1" name="_attachedtocatapult" order="1"/>
+        <boolean default="true" desc="" dropdown="" fullname="Last fired?" hidden="true" id="2" name="_Lastfired" order="2"/>
+        <number default="0" desc="" dropdown="" fullname="firedcount" hidden="true" id="3" name="_firedcount" order="3"/>
+        <number default="0" desc="" dropdown="" fullname="counting" hidden="true" id="4" name="_counting" order="4"/>
+        <number default="0" desc="" dropdown="" fullname="one" hidden="false" id="5" name="_one" order="5"/>
+        <number default="0" desc="" dropdown="" fullname="alsoone" hidden="false" id="6" name="_alsoone" order="6"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_2_2_CatapultGameController" desc="Controls the game mechanics of the catapult game." description="Controls the game mechanics of the catapult game." design="true" drawOrder="0" id="2" language="" name="Catapult Game Controller" oid="-1" package="" scenespecific="false" shared="false" type="scene">
+        <boolean default="true" desc="" dropdown="" fullname="Can Shoot?" hidden="true" id="1" name="_CanShoot" order="0"/>
+        <number default="2.0" desc="How long the game spends looking at the construction at the start. (in seconds)" dropdown="" fullname="Time looking at construct" hidden="false" id="4" name="_Timelookingatconstruct" order="7"/>
+        <number default="1200" desc="The center x position of the camera when showing the construct at the start." dropdown="" fullname="Construct X position" hidden="false" id="5" name="_ConstructXposition" order="8"/>
+        <number default="3" desc="How many projectiles you start with." dropdown="" fullname="Starting Projectiles" hidden="false" id="6" name="_StartingProjectiles" order="9"/>
+        <boolean default="false" desc="" dropdown="" fullname="Init End of Game" hidden="true" id="10" name="_InitEndofGame" order="1"/>
+        <number default="2" desc="The time to wait before the game ends when the last projectile is fired. (seconds)" dropdown="" fullname="Time to wait before endgame" hidden="false" id="11" name="_Timetowaitbeforeendgame" order="10"/>
+        <number default="1" desc="If the game ends on a win then the wait should be a tad shorter. (seconds)" dropdown="" fullname="Wait Before Win" hidden="false" id="12" name="_WaitBeforeWin" order="11"/>
+        <number default="0.0" desc="" dropdown="" fullname="enemycount" hidden="true" id="13" name="_enemycount" order="2"/>
+        <actorgroup default="" desc="The Actor Group all enemies are in." dropdown="" fullname="Enemy Group" hidden="false" id="14" name="_EnemyGroup" order="12"/>
+        <boolean default="false" desc="" dropdown="" fullname="Show Endgame" hidden="true" id="15" name="_ShowEndgame" order="3"/>
+        <boolean default="false" desc="" dropdown="" fullname="Won?" hidden="true" id="16" name="_Won" order="4"/>
+        <sound default="48" desc="The sound to play upon losing." dropdown="" fullname="Lose Sound" hidden="false" id="19" name="_LoseSound" order="14"/>
+        <sound default="47" desc="The sound to play upon winning." dropdown="" fullname="Win Sound" hidden="false" id="20" name="_WinSound" order="15"/>
+        <sound default="49" desc="The Ambience/Music to play in the background." dropdown="" fullname="Ambience/Music" hidden="false" id="25" name="_AmbienceMusic" order="6"/>
+        <scene default="" desc="The NEXT LEVEL." dropdown="" fullname="Next Scene" hidden="false" id="24" name="_NextScene" order="5"/>
+        <boolean default="true" desc="" dropdown="" fullname="startcam" hidden="true" id="27" name="_startcam" order="18"/>
+        <actor default="" desc="" dropdown="" fullname="lastshot" hidden="true" id="26" name="_lastshot" order="17"/>
+        <actor default="" desc="" dropdown="" fullname="You Win Label" hidden="true" id="29" name="_YouWinLabel" order="20"/>
+        <actor default="" desc="" dropdown="" fullname="Projectiles Label" hidden="true" id="28" name="_ProjectilesLabel" order="19"/>
+        <boolean default="false" desc="" dropdown="" fullname="Spawn Labels" hidden="true" id="30" name="_SpawnLabels" order="21"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="loseinit" enabled="true" id="5" name="event-custom" order="5" repeats="true"/>
+            <event displayName="abletoshoot" enabled="true" id="6" name="event-custom" order="6" repeats="true"/>
+            <event displayName="win" enabled="true" id="7" name="event-custom" order="7" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_4_4_LoseHealthOnCollision" desc="" description="" design="true" drawOrder="0" id="4" language="" name="Lose Health On Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="" dropdown="" fullname="oldxv" hidden="true" id="1" name="_oldxv" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="oldyv" hidden="true" id="2" name="_oldyv" order="2"/>
+        <number default="10" desc="The minimum amount of health that can be lost from collision." dropdown="" fullname="Minimum Health Lost" hidden="false" id="3" name="_MinimumHealthLost" order="3"/>
+        <number default="1" desc="Changes the amount of damage dealt by the multiplied number." dropdown="" fullname="Damage Multiplier" hidden="false" id="4" name="_DamageMultiplier" order="4"/>
+        <number default="0" desc="" dropdown="" fullname="Damage" hidden="true" id="5" name="_Damage" order="5"/>
+        <boolean default="false" desc="Determines whether or not the actor plays a sound on collision." dropdown="" fullname="Play Sound?" hidden="false" id="6" name="_PlaySound" order="6"/>
+        <sound default="" desc="The sound that is played if the above is true." dropdown="" fullname="Sound to Play" hidden="false" id="7" name="_SoundtoPlay" order="7"/>
+        <number default="10" desc="The minimum collision strength to trigger a sound." dropdown="" fullname="Minimum Sound Threshold" hidden="false" id="8" name="_MinimumSoundThreshold" order="8"/>
+        <number default="0.5" desc="The minimum time between sounds being played." dropdown="" fullname="Time delay between sounds" hidden="false" id="9" name="_Timedelaybetweensounds" order="9"/>
+        <boolean default="true" desc="" dropdown="" fullname="Can Play?" hidden="true" id="10" name="_CanPlay" order="10"/>
+        <number default="100" desc="" dropdown="" fullname="Health" hidden="false" id="11" name="_Health" order="11"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_10_10" desc="Assign up to 3 sounds to play when colliding." description="Assign up to 3 sounds to play when colliding." design="true" drawOrder="0" id="10" language="" name="Collisions Sounds" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="" dropdown="" fullname="oldxv" hidden="true" id="1" name="_oldxv" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="oldyv" hidden="true" id="2" name="_oldyv" order="2"/>
+        <number default="0.0" desc="" dropdown="" fullname="Damage" hidden="true" id="5" name="_Damage" order="3"/>
+        <sound default="" desc="The sound that is played if the above is true." dropdown="" fullname="Sound to Play 1" hidden="false" id="7" name="_SoundtoPlay" order="5"/>
+        <number default="10" desc="The minimum collision strength to trigger a sound." dropdown="" fullname="Minimum Sound Threshold" hidden="false" id="8" name="_MinimumSoundThreshold" order="8"/>
+        <number default="0.5" desc="The minimum time between sounds being played." dropdown="" fullname="Time delay between sounds" hidden="false" id="9" name="_Timedelaybetweensounds" order="9"/>
+        <boolean default="true" desc="" dropdown="" fullname="Can Play?" hidden="true" id="10" name="_CanPlay" order="10"/>
+        <number default="1.0" desc="1 - 3. Sounds are chosen randomly." dropdown="" fullname="Number of sounds to Play?" hidden="false" id="11" name="_NumberofsoundstoPlay" order="4"/>
+        <sound default="" desc="Only matters if # of sounds is greater than one." dropdown="" fullname="Sound to Play 2" hidden="false" id="12" name="_SoundtoPlay2" order="6"/>
+        <sound default="" desc="Only matters if # of sounds is greater than two." dropdown="" fullname="Sound to Play 3" hidden="false" id="13" name="_SoundtoPlay3" order="7"/>
+        <number default="0" desc="" dropdown="" fullname="randsound" hidden="true" id="14" name="_randsound" order="11"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_11_11_Explodeintotonsofbits" desc="" description="" design="true" drawOrder="0" id="11" language="" name="Die When Health is 0 or Leaving Scene" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <sound default="33" desc="And then it was like BAWOOM" dropdown="" fullname="Explosion noise" hidden="false" id="1" name="_Explosionnoise" order="1"/>
+        <actortype default="36" desc="The actual explosion's actor." dropdown="" fullname="Explosion Graphic" hidden="false" id="7" name="_ExplosionGraphic" order="7"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="2" repeats="true"/>
+            <event displayName="Created" enabled="true" id="3" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="12" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_0" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="13" language="" name="ActorEvents_0" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_10" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="14" language="" name="ActorEvents_10" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_15_15_AlwaysSimulate" desc="Allows the actor to simulate even when off screen." description="Allows the actor to simulate even when off screen." design="true" drawOrder="0" id="15" language="" name="Always Simulate" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_8" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="17" language="" name="ActorEvents_8" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_12" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="16" language="" name="ActorEvents_12" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_19" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="19" language="" name="ActorEvents_19" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_14" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="18" language="" name="ActorEvents_14" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_21_21_FadeAfterTime" desc="Attach this behaviour to an actor to have it fade out after the specified time and over a specified duration" description="Attach this behaviour to an actor to have it fade out after the specified time and over a specified duration" design="true" drawOrder="0" id="21" language="" name="Fade After Time" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="The amount of time, in seconds, over which to fade out." dropdown="" fullname="Fade Time" hidden="false" id="1" name="_FadeTime" order="2"/>
+        <number default="0.0" desc="The amount of time, in seconds after which the actor should start fading." dropdown="" fullname="Time To Fade After" hidden="false" id="3" name="_TimeToFadeAfter" order="1"/>
+        <text default="" desc="What the actor should do when it has finished fading. Choose from &quot;Kill Self&quot;, &quot;Recycle Self&quot; or &quot;None&quot;." dropdown="Kill Self=Kill&#10;Recycle Self=Recycle&#10;None=None" fullname="End Action" hidden="false" id="4" name="_EndAction" order="3"/>
+        <boolean default="false" desc="An INTERNAL attribute to determine whether or not the actor is already fading." dropdown="" fullname="Fading" hidden="true" id="5" name="_Fading" order="4"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Fade" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
+            <event displayName="When Creating" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_36" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="20" language="" name="ActorEvents_36" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_4" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="23" language="" name="ActorEvents_4" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_56" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="22" language="" name="ActorEvents_56" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_25_25_Label" desc="Attach this to an actor to show text on the screen. &lt;br/&gt;&#10;It works in Flash and iOS games. In iOS use this behavior instead of the &quot;draw text&quot; block for better performance." description="Attach this to an actor to show text on the screen. &lt;br/&gt;&#10;It works in Flash and iOS games. In iOS use this behavior instead of the &quot;draw text&quot; block for better performance." design="true" drawOrder="0" id="25" language="" name="Label" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <font default="" desc="The font used to display the text.&lt;br/&gt;&#10;You can use the custom blocks that come with this behavior to set the font at runtime." dropdown="" fullname="Font" hidden="false" id="1" name="_Font" order="6"/>
+        <color default="" desc="The font color used, if &lt;var&gt;Change Font Color&lt;/var&gt; is selected.&#10;" dropdown="" fullname="Font Color" hidden="false" id="2" name="_FontColor" order="8"/>
+        <text default="Replace Me" desc="The text to display. &lt;br/&gt;&#10;You can use the custom blocks that come with this behavior to change the text at runtime." dropdown="" fullname="Text" hidden="false" id="4" name="_Text" order="5"/>
+        <number default="0.0" desc="" dropdown="" fullname="X" hidden="true" id="11" name="_X" order="1"/>
+        <boolean default="true" desc="If selected, the actor will be anchored to the screen." dropdown="" fullname="Anchor to Screen" hidden="false" id="14" name="_AnchortoScreen" order="12"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <text default="" desc="The alignment of the text.&lt;br/&gt;&#10;You can use the custom blocks that come with this behavior to change the alignment at runtime." dropdown="Left=Left&#10;Center=Center&#10;Right=Right" fullname="Alignment" hidden="false" id="17" name="_Alignment" order="9"/>
+        <animation default="" desc="Attach this behavior to an actor type with two animations. One animation to represent the actor type in the Scene Editor, and a completely transparent animation.&lt;br/&gt;&#10;Specify the transparent animation here." dropdown="" fullname="Transparent Animation" hidden="false" id="16" name="_TransparentAnimation" order="13"/>
+        <boolean default="false" desc="" dropdown="" fullname="Start" hidden="true" id="19" name="_Start" order="2"/>
+        <number default="128.0" desc="The width of the label. The text will be aligned accordingly based on the &lt;var&gt;Label Width&lt;/var&gt; and the &lt;var&gt;Alighnment&lt;/var&gt; attribute. In iOS, if the text width is larger than the label width, the text will be wrapped. Text wrapping is not supported in Flash.&lt;br/&gt;&#10;You can use the custom blocks that come with this behavior to change the label width at runtime." dropdown="" fullname="Label Width" hidden="false" id="18" name="_LabelWidth" order="10"/>
+        <number default="0.0" desc="" dropdown="" fullname="Text Width" hidden="true" id="21" name="_TextWidth" order="3"/>
+        <boolean default="true" desc="If selected, the label width will be at least as large as the text width. This means that the text will never wrap. This is useful to produce the same results on Flash and iOS." dropdown="" fullname="Label Width At Least Text Width" hidden="false" id="20" name="_LabelWidthAtLeastTextWidth" order="11"/>
+        <boolean default="false" desc="If selected, a custom color will be used for the font. This option works only in Flash." dropdown="" fullname="Change Font Color" hidden="false" id="23" name="_ChangeFontColor" order="7"/>
+        <number default="2" desc="" dropdown="" fullname="Padding" hidden="true" id="22" name="_Padding" order="4"/>
+        <blocks>
+            <receiver blockID="69" id="1"/>
+            <receiver blockID="70" id="2"/>
+            <receiver blockID="71" id="3"/>
+            <receiver blockID="66" id="4"/>
+            <receiver blockID="67" id="5"/>
+            <receiver blockID="68" id="6"/>
+        </blocks>
+        <events>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="4" repeats="true"/>
+            <event displayName="Created" enabled="true" id="5" name="init" order="2" repeats="true"/>
+            <event displayName="Custom Block" enabled="true" id="6" name="event-custom-block" order="6" repeats="true"/>
+            <event displayName="Custom Block" enabled="true" id="7" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="Custom Block" enabled="true" id="8" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="Custom Block" enabled="true" id="9" name="event-custom-block" order="9" repeats="true"/>
+            <event displayName="Custom Block" enabled="true" id="10" name="event-custom-block" order="10" repeats="true"/>
+            <event displayName="Custom Block" enabled="true" id="11" name="event-custom-block" order="11" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_58" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="24" language="" name="ActorEvents_58" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+</pack>

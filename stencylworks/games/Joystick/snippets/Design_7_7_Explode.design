@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="-1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1"/>
+        </init>
+    </group>
+    <group eventID="-1" id="1">
+        <step comment="false" x="15" y="88">
+            <group eventID="-1" id="-1"/>
+        </step>
+    </group>
+    <group eventID="-1" id="2">
+        <collide comment="false" x="15" y="161">
+            <group eventID="-1" id="-1"/>
+        </collide>
+    </group>
+    <group eventID="-1" id="3">
+        <draw comment="false" x="15" y="234">
+            <group eventID="-1" id="-1"/>
+        </draw>
+    </group>
+    <group eventID="-1" id="4">
+        <receive-message comment="false" x="15" y="307">
+            <group eventID="-1" id="-1">
+                <play-sound4 comment="false" x="26" y="332">
+                    <int id="0" val="0"/>
+                    <SOUND eid="25" id="1"/>
+                </play-sound4>
+                <repeat comment="false" x="26" y="359">
+                    <group eventID="-1" id="-1">
+                        <create-actor3 comment="false" x="37" y="379">
+                            <ACTORTYPE eid="22" id="0"/>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="2"/>
+                            </get-xy>
+                            <get-xy comment="false" id="2" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="3"/>
+                            </get-xy>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <setanim comment="false" x="37" y="419">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                            </string-to-anim>
+                        </setanim>
+                        <set-xy comment="false" x="37" y="456">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="0"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-wh>
+                            </minus>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="501">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-wh>
+                            </minus>
+                        </set-xy>
+                        <fadeInOut comment="false" x="37" y="546">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="0"/>
+                        </fadeInOut>
+                        <setav comment="false" x="37" y="573">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <randint comment="false" id="1" x="0" y="0">
+                                <int id="0" val="-100"/>
+                                <int id="1" val="100"/>
+                            </randint>
+                        </setav>
+                        <set-dxy comment="false" x="37" y="605">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="0"/>
+                            <randint comment="false" id="2" x="0" y="0">
+                                <int id="0" val="-3"/>
+                                <int id="1" val="3"/>
+                            </randint>
+                        </set-dxy>
+                        <set-dxy comment="false" x="37" y="637">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <randint comment="false" id="2" x="0" y="0">
+                                <int id="0" val="-3"/>
+                                <int id="1" val="3"/>
+                            </randint>
+                        </set-dxy>
+                    </group>
+                    <int id="0" val="4"/>
+                </repeat>
+            </group>
+            <int id="0" val="explode"/>
+        </receive-message>
+    </group>
+    <group id="-1"/>
+</groups>

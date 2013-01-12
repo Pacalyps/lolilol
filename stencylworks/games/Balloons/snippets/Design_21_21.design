@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<receive-message comment="false" x="61" y="376">
+<group id="-1">
+<set-val-21-1 comment="false" x="72" y="401">
+<plus comment="false" id="0" x="0" y="0">
+<get-val-21-1 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</plus>
+</set-val-21-1>
+</group>
+<int id="0" val="popped"/>
+</receive-message>
+</group>
+<group id="1">
+<step comment="false" x="60" y="150">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<init comment="false" x="60" y="40">
+<group id="-1"/>
+</init>
+</group>
+<group id="3">
+<draw comment="false" x="131" y="252">
+<group id="-1">
+<draw-text comment="false" x="142" y="277">
+<tostring comment="false" id="0" x="0" y="0">
+<get-val-21-1 comment="false" id="0" x="0" y="0"/>
+</tostring>
+<int id="1" val="261"/>
+<int id="2" val="376"/>
+</draw-text>
+</group>
+</draw>
+</group>
+<group id="-1"/>
+</groups>

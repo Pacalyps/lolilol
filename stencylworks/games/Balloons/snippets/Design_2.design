@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <step comment="false" x="15" y="88">
+            <group id="-1"/>
+        </step>
+    </group>
+    <group id="1">
+        <receive-message comment="false" x="15" y="307">
+            <group id="-1">
+                <play-sound4 comment="false" x="26" y="332">
+                    <int id="0" val="0"/>
+                    <SOUND eid="var" id="1" vid="13"/>
+                </play-sound4>
+                <set-val-2-8 comment="false" x="26" y="359">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <mousexy comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </mousexy>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </get-xy>
+                    </minus>
+                </set-val-2-8>
+                <set-val-2-9 comment="false" x="26" y="397">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <mousexy comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0"/>
+                        </mousexy>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </get-xy>
+                    </minus>
+                </set-val-2-9>
+                <set-val-2-10 comment="false" x="26" y="435">
+                    <to-degreesradians comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <atan2 comment="false" id="1" x="0" y="0">
+                            <get-val-2-9 comment="false" id="0" x="0" y="0"/>
+                            <get-val-2-8 comment="false" id="1" x="0" y="0"/>
+                        </atan2>
+                    </to-degreesradians>
+                </set-val-2-10>
+                <set-val-2-11 comment="false" x="26" y="478">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-2-12 comment="false" id="1" x="0" y="0"/>
+                        <sqrt comment="false" id="2" x="0" y="0">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <pow comment="false" id="0" x="0" y="0">
+                                    <get-val-2-8 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="2"/>
+                                </pow>
+                                <pow comment="false" id="1" x="0" y="0">
+                                    <get-val-2-9 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="2"/>
+                                </pow>
+                            </plus>
+                        </sqrt>
+                    </minmax>
+                </set-val-2-11>
+                <create-actor3 comment="false" x="26" y="531">
+                    <ACTORTYPE eid="var" id="0" vid="1"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="2"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="3"/>
+                    </get-xy>
+                    <int id="3" val="2"/>
+                </create-actor3>
+                <backforward comment="false" x="26" y="571">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="2"/>
+                </backforward>
+                <set-xy comment="false" x="26" y="598">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="0"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <int id="1" val="10"/>
+                        </minus>
+                        <times comment="false" id="1" x="0" y="0">
+                            <trig-master comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <to-degreesradians comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <get-val-2-10 comment="false" id="1" x="0" y="0"/>
+                                </to-degreesradians>
+                            </trig-master>
+                            <int id="1" val="60"/>
+                        </times>
+                    </plus>
+                </set-xy>
+                <set-xy comment="false" x="26" y="666">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                            <int id="1" val="0"/>
+                        </minus>
+                        <times comment="false" id="1" x="0" y="0">
+                            <trig-master comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                                <to-degreesradians comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <get-val-2-10 comment="false" id="1" x="0" y="0"/>
+                                </to-degreesradians>
+                            </trig-master>
+                            <int id="1" val="60"/>
+                        </times>
+                    </plus>
+                </set-xy>
+                <set-dxy comment="false" x="26" y="734">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="0"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <trig-master comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <to-degreesradians comment="false" id="1" x="0" y="0">
+                                <int id="0" val="1"/>
+                                <get-val-2-10 comment="false" id="1" x="0" y="0"/>
+                            </to-degreesradians>
+                        </trig-master>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-val-2-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="7.8"/>
+                        </div>
+                    </times>
+                </set-dxy>
+                <set-dxy comment="false" x="26" y="797">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <trig-master comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                            <to-degreesradians comment="false" id="1" x="0" y="0">
+                                <int id="0" val="1"/>
+                                <get-val-2-10 comment="false" id="1" x="0" y="0"/>
+                            </to-degreesradians>
+                        </trig-master>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-val-2-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="5.2"/>
+                        </div>
+                    </times>
+                </set-dxy>
+            </group>
+            <int id="0" val="fire"/>
+        </receive-message>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="161">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="4">
+        <draw comment="false" x="15" y="234">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

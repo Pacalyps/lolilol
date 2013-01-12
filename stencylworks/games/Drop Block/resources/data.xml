@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <sprite atlasID="0" default="0" desc="" height="32" id="1" name="Ball" shared="false" width="32">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="16" width="32">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" desc="" height="64" id="10" name="Block" shared="false" width="64">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" desc="" height="32" id="3" name="Block" shared="false" width="32">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="16" width="32">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="0" continuous="false" desc="This block contains a behavior that causes it to be destroyed when you click on it." eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="2" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Block" oid="-1" pausable="true" rest="0.0" shared="false" sprite="3" static="true" touchable="true">
+        <snippets>
+            <s enabled="true" id="0">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="1">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="2">
+                <prop id="1" list="0" val="4"/>
+                <prop id="2" list="0" val="6"/>
+                <prop id="3" list="0" val="35"/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="8" id="5" name="Block Particle" shared="false" width="8">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="8" id="0" loop="true" name="Animation 0" numframes="1" originx="4" originy="4" width="8"/>
+    </sprite>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="4" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Block Particle" oid="-1" pausable="true" rest="0.0" shared="false" sprite="5" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="3">
+                <prop id="1" list="0" val=".25"/>
+                <prop id="2" list="0" val="1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <font alphabet="" atlasID="0" desc="" height="42" id="8" name="Game Font" offsets="" oid="-1" rowHeight="0" shared="false"/>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="Our hero! Guide him to the goal zone." eventsnippetid="-1" fixedrot="false" fric="0.0" gid="3" id="0" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.01" name="Happy Block" oid="-1" pausable="true" rest="0.0" shared="false" sprite="1" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="5">
+                <prop id="1" list="0" val=".25"/>
+                <prop id="2" list="0" val=".25"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="6">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="0" continuous="false" desc="This block contains a behavior that causes it to be destroyed when you click on it." eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="9" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Large Block" oid="-1" pausable="true" rest="0.0" shared="false" sprite="10" static="true" touchable="true">
+        <snippets>
+            <s enabled="true" id="0">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="1">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="2">
+                <prop id="1" list="0" val="4"/>
+                <prop id="2" list="0" val="12"/>
+                <prop id="3" list="0" val="35"/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="15" id="12" name="Reset Button" shared="false" width="31">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="15" id="0" loop="true" name="Animation 0" numframes="1" originx="15" originy="7" width="31">
+            <poly data="4,0,0,31,0,31,15,0,15" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="0" continuous="false" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="11" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Reset Button" oid="-1" pausable="true" rest="0.0" shared="false" sprite="12" static="true" touchable="true">
+        <snippets>
+            <s enabled="true" id="7">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="7" name="Space" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <tileset across="4" atlasID="0" desc="" down="1" id="6" name="Tiles" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="3" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="2" data="" durations="100" frames="2" id="4" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="3" id="5" order="-1"/>
+    </tileset>
+</pack>

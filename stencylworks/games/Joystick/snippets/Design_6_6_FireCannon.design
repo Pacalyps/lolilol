@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="-1" id="0">
+        <draw comment="false" x="15" y="635">
+            <group eventID="-1" id="-1"/>
+        </draw>
+    </group>
+    <group eventID="-1" id="1">
+        <collide comment="false" x="15" y="562">
+            <group eventID="-1" id="-1"/>
+        </collide>
+    </group>
+    <group eventID="-1" id="2">
+        <step comment="false" x="15" y="88">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="113">
+                    <group eventID="-1" id="-1">
+                        <play-sound4 comment="false" x="37" y="146">
+                            <int id="0" val="0"/>
+                            <SOUND eid="var" id="1" vid="13"/>
+                        </play-sound4>
+                        <set-val-6-10 comment="false" x="37" y="173">
+                            <getdir comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                            </getdir>
+                        </set-val-6-10>
+                        <set-val-6-11 comment="false" x="37" y="206">
+                            <get-val-6-12 comment="false" id="0" x="0" y="0"/>
+                        </set-val-6-11>
+                        <create-recycled-actor comment="false" x="37" y="231">
+                            <get-val-6-1 comment="false" id="0" x="0" y="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <get-val-6-14 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <get-val-6-15 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                            <int id="3" val="2"/>
+                        </create-recycled-actor>
+                        <setangle comment="false" x="37" y="276">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <getdir comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                            </getdir>
+                        </setangle>
+                        <set-dxy comment="false" x="37" y="316">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="0"/>
+                            <neg comment="false" id="2" x="0" y="0">
+                                <times comment="false" id="0" x="0" y="0">
+                                    <trig-master comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <to-degreesradians comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="1"/>
+                                            <getdir comment="false" id="1" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                            </getdir>
+                                        </to-degreesradians>
+                                    </trig-master>
+                                    <div comment="false" id="1" x="0" y="0">
+                                        <get-val-6-11 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="60"/>
+                                    </div>
+                                </times>
+                            </neg>
+                        </set-dxy>
+                        <set-dxy comment="false" x="37" y="392">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <times comment="false" id="2" x="0" y="0">
+                                <trig-master comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <to-degreesradians comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <getdir comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getdir>
+                                    </to-degreesradians>
+                                </trig-master>
+                                <div comment="false" id="1" x="0" y="0">
+                                    <get-val-6-11 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="40"/>
+                                </div>
+                            </times>
+                        </set-dxy>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <CONTROL eid="5" id="1"/>
+                    </keystate>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="-1" id="3">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1"/>
+        </init>
+    </group>
+    <group id="-1">
+        <neg comment="false" x="595" y="644">
+            <int id="0" val=""/>
+        </neg>
+    </group>
+</groups>

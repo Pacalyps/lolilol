@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<if comment="false" x="26" y="113">
+<group id="-1">
+<say-this comment="false" x="37" y="156">
+<int id="0" val="CheckFalling"/>
+</say-this>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+<else comment="false" x="26" y="188">
+<group id="-1">
+<set-val-114-2 comment="false" x="37" y="208">
+<false comment="false" id="0" x="0" y="0"/>
+</set-val-114-2>
+</group>
+</else>
+<if comment="false" x="26" y="245">
+<group id="-1">
+<actor-set-prop comment="false" x="37" y="275">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Falling?"/>
+<false comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<get-val-114-2 comment="false" id="0" x="0" y="0"/>
+</not>
+</if>
+<else comment="false" x="26" y="319">
+<group id="-1">
+<actor-set-prop comment="false" x="37" y="339">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Falling?"/>
+<true comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+<if comment="false" x="37" y="371">
+<group id="-1">
+<custom-13 comment="false" x="48" y="409">
+<ACTOR eid="this" id="0"/>
+<get-val-114-3 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="Falling"/>
+</custom-13>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Facing Right?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<else comment="false" x="37" y="453">
+<group id="-1">
+<custom-13 comment="false" x="48" y="473">
+<ACTOR eid="this" id="0"/>
+<get-val-114-4 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="Falling"/>
+</custom-13>
+</group>
+</else>
+</group>
+</else>
+<set-val-114-1 comment="false" x="26" y="529">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+</set-val-114-1>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="590">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="663">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="736">
+<group id="-1">
+<if comment="false" x="26" y="761">
+<group id="-1">
+<set-val-114-2 comment="false" x="37" y="799">
+<false comment="false" id="0" x="0" y="0"/>
+</set-val-114-2>
+<stop comment="false" x="37" y="824"/>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+<get-val-114-1 comment="false" id="1" x="0" y="0"/>
+</lesseq>
+</if>
+<if comment="false" x="26" y="856">
+<group id="-1">
+<set-val-114-2 comment="false" x="37" y="894">
+<false comment="false" id="0" x="0" y="0"/>
+</set-val-114-2>
+<stop comment="false" x="37" y="919"/>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Wall Sliding?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<set-val-114-2 comment="false" x="26" y="951">
+<true comment="false" id="0" x="0" y="0"/>
+</set-val-114-2>
+</group>
+<int id="0" val="CheckFalling"/>
+</receive-message>
+</group>
+<group id="5"/>
+<group id="-1"/>
+</groups>

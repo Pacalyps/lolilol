@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups>
+<group id="2">
+<draw comment="false" x="60" y="260">
+<group id="-1"/>
+</draw>
+</group>
+<group id="1">
+<step comment="false" x="60" y="150">
+<group id="-1"/>
+</step>
+</group>
+<group id="0">
+<init comment="false" x="60" y="40">
+<group id="-1">
+<loop-sound2 comment="false" x="71" y="65">
+<int id="0" val="1"/>
+</loop-sound2>
+</group>
+</init>
+</group>
+<group id="-1"/>
+</groups>

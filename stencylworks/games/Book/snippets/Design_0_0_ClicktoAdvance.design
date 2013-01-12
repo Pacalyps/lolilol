@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="88">
+            <group id="-1">
+                <if comment="false" x="26" y="113">
+                    <group id="-1">
+                        <scene-change3 comment="false" x="37" y="146">
+                            <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="1"/>
+                            <int id="4" val="1"/>
+                        </scene-change3>
+                    </group>
+                    <began-dragged-released-touch comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </began-dragged-released-touch>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <draw comment="false" x="15" y="218">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

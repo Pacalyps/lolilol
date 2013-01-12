@@ -1,0 +1,1 @@
+Go off the top/left, appear at the bottom/right and vice versa. Acts like the ship Asteroids.

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<game accelFramerate="0" adsPosition="0" aheight="320" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="600" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.yourcompany.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="" cws-icon128="" cws-icon16="" cws-name="" cws-version="" default="8" defaultFramerate="30" desc="This kit contains the standard player behaviors that are found in most platforming games.  It also contains an example player Actor to demonstrate how they can be used." deviceOS="4.3" engine="30" format="2.0" gameid="1985" height="320" kit="true" lockURL="" mochi="" multitouch="true" name="Jump and Run" ngID="" ngKey="" onlineID="21845" orientation="0" preloaderstyle="0" products="" projectType="" scale="1.0" showAds="false" simulatorOS="4.3" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="600">
+    <folders>
+        <group desc="" id="0" name="Other" type="snippet">
+            <r id="169"/>
+            <r id="175"/>
+            <r id="202"/>
+            <r id="123"/>
+        </group>
+        <group desc="" id="1" name="Motion" type="snippet">
+            <r id="206"/>
+            <r id="115"/>
+            <r id="114"/>
+            <r id="112"/>
+            <r id="178"/>
+            <r id="110"/>
+            <r id="163"/>
+            <r id="179"/>
+            <r id="108"/>
+            <r id="180"/>
+            <r id="181"/>
+        </group>
+        <group desc="" id="2" name="Collisions" type="snippet">
+            <r id="216"/>
+            <r id="107"/>
+        </group>
+    </folders>
+    <packs>
+        <pack desc="This pack contains the core movement Behaviors from the Jump and Run Kit:&#10;Walking&#10;Running&#10;Ducking&#10;Jumping&#10;Falling&#10;Air Jumping&#10;Wall Jumping&#10;Wall Sliding&#10;Ground Pound&#10;Slope Detection&#10;Animation Manager&#10;On Ground" id="0" name="Platformer Movement" oid="-1" resources="" snippets="169,206,110,163,108,107,115,114,112,178,179,180,181"/>
+    </packs>
+    <groups>
+        <group desc="" id="4" name="Grappling Hook"/>
+        <group desc="" id="5" name="Hands"/>
+        <group desc="" id="6" name="Free Space"/>
+        <group desc="" id="7" name="Pickups"/>
+    </groups>
+    <cgroups>
+        <cgroup g1="7" g2="0"/>
+        <cgroup g1="5" g2="1"/>
+        <cgroup g1="6" g2="1"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="3" g2="4"/>
+        <cgroup g1="4" g2="1"/>
+    </cgroups>
+    <input>
+        <key id="0" keyname="C" name="groundpound" vk="67"/>
+        <key id="1" keyname="DOWN" name="duck" vk="40"/>
+        <key id="2" keyname="LEFT" name="left" vk="37"/>
+        <key id="3" keyname="X" name="run" vk="88"/>
+        <key id="4" keyname="RIGHT" name="right" vk="39"/>
+        <key id="5" keyname="UP" name="up" vk="38"/>
+        <key id="6" keyname="Z" name="jump" vk="90"/>
+        <key id="7" keyname="UP" name="jetpack" vk="38"/>
+        <key id="8" keyname="X" name="grapple" vk="88"/>
+    </input>
+    <attcats>
+        <cat id="0" name="Scoring"/>
+        <cat id="-1" name="Default"/>
+    </attcats>
+    <props>
+        <p name="phys.gravx" value=""/>
+        <p name="phys.gravy" value=""/>
+    </props>
+    <attributes>
+        <bool cid="-1" id="1" name="GameStart" save="true" value="true"/>
+        <number cid="0" id="0" name="Score" save="true" value="0.0"/>
+    </attributes>
+    <collisions>
+        <poly id="1" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="2" name="Tri 45R" pts="0.0,0.0#0.0,1.0#1.0,1.0"/>
+        <poly id="3" name="Tri 45L" pts="1.0,0.0#0.0,1.0#1.0,1.0"/>
+        <poly id="4" name="Tri 45R Inv" pts="0.0,0.0#0.0,1.0#1.0,0.0"/>
+        <poly id="5" name="Tri 45L Inv" pts="0.0,0.0#1.0,1.0#1.0,0.0"/>
+        <poly id="6" name="Tri 30R" pts="0.0,1.0#1.0,1.0#1.0,0.5"/>
+        <poly id="7" name="Tri 30L" pts="0.0,0.5#0.0,1.0#1.0,1.0"/>
+        <poly id="8" name="Tri 30-2R" pts="0.0,0.5#0.0,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="9" name="Tri 30-2L" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.5"/>
+        <poly id="10" name="Tri 30R Inv" pts="0.0,0.0#1.0,0.5#1.0,0.0"/>
+        <poly id="11" name="Tri 30L Inv" pts="0.0,0.0#0.0,0.5#1.0,0.0"/>
+        <poly id="12" name="Tri 30-2R Inv" pts="0.0,0.0#0.0,0.5#1.0,1.0#1.0,0.0"/>
+        <poly id="13" name="Tri 30-2L Inv" pts="0.0,0.0#0.0,1.0#1.0,0.5#1.0,0.0"/>
+        <poly id="14" name="Tri 60R" pts="0.5,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="15" name="Tri 60L" pts="0.0,0.0#0.0,1.0#0.5,1.0"/>
+        <poly id="17" name="Tri 60-2L" pts="0.0,0.0#0.0,1.0#1.0,1.0#0.5,0.0"/>
+        <poly id="16" name="Tri 60-2R" pts="0.5,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="19" name="Tri 60L Inv" pts="0.0,0.0#0.0,1.0#0.5,0.0"/>
+        <poly id="18" name="Tri 60R Inv" pts="0.5,0.0#1.0,1.0#1.0,0.0"/>
+        <poly id="21" name="Tri 60-2L Inv" pts="0.0,0.0#0.0,1.0#0.5,1.0#1.0,0.0"/>
+        <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="22" name="Half Square" pts="0.0,0.49#0.0,0.99#1.0,0.99#1.0,0.49"/>
+    </collisions>
+    <atlases>
+        <atlas dirty="true" id="0" members="432,286,112" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="4" members="" name="Atlas 5" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="5" members="" name="Atlas 6" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="6" members="" name="Atlas 7" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="7" members="" name="Atlas 8" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="8" members="" name="Atlas 9" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="9" members="" name="Atlas 10" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="10" members="" name="Atlas 11" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="11" members="" name="Atlas 12" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="12" members="" name="Atlas 13" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="13" members="" name="Atlas 14" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="14" members="" name="Atlas 15" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="15" members="" name="Atlas 16" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="17" members="" name="Atlas 18" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="16" members="" name="Atlas 17" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="19" members="" name="Atlas 20" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="18" members="" name="Atlas 19" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="21" members="" name="Atlas 22" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="20" members="" name="Atlas 21" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="23" members="" name="Atlas 24" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="22" members="" name="Atlas 23" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="25" members="" name="Atlas 26" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="24" members="" name="Atlas 25" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="27" members="" name="Atlas 28" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="26" members="" name="Atlas 27" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="29" members="" name="Atlas 30" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="28" members="" name="Atlas 29" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="31" members="" name="Atlas 32" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="30" members="" name="Atlas 31" pvr="false" resize="0" start="true" target="0"/>
+    </atlases>
+    <libraries/>
+</game>

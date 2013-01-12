@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet attachedevent="false" class="scripts.Design_207_207_GunFiring" desc="" description="" design="true" drawOrder="0" id="207" language="" name="Gun Firing" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <boolean default="true" desc="" dropdown="" fullname="Facing Left" hidden="true" id="1" name="_FacingLeft" order="1"/>
+        <boolean default="true" desc="" dropdown="" fullname="Able to Fire" hidden="true" id="2" name="_AbletoFire" order="2"/>
+        <number default="0.2" desc="" dropdown="" fullname="Min Fire Time" hidden="false" id="3" name="_MaxFireSpeed" order="3"/>
+        <number default="60" desc="" dropdown="" fullname="Bullet Velocity" hidden="false" id="4" name="_BulletVelocity" order="4"/>
+        <sound default="439" desc="" dropdown="" fullname="Gun Fire Sound" hidden="false" id="5" name="_GunFireSound" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_169_169_AnimationManager" desc="This Behavior is responsible for keeping track of the current animation and overriding that animation (if appropriate) when a new animation request is made." description="This Behavior is responsible for keeping track of the current animation and overriding that animation (if appropriate) when a new animation request is made." design="true" drawOrder="0" id="169" language="" name="Animation Manager" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="Playing One Time?" hidden="true" id="1" name="_PlayingOneTime" order="1"/>
+        <text default="" desc="" dropdown="" fullname="Current Category" hidden="true" id="2" name="_CurrentCategory" order="2"/>
+        <animation default="" desc="" dropdown="" fullname="Default Right Animation" hidden="false" id="3" name="_DefaultRightAnimation" order="4"/>
+        <animation default="" desc="" dropdown="" fullname="Default Left Animation" hidden="false" id="4" name="_DefaultLeftAnimation" order="5"/>
+        <list default="list" desc="Enter in a list of animation categories.&lt;br&gt;&#10;Animations that are higher up will override&lt;br&gt;&#10;the ones below it." dropdown="" fullname="Category Hierarchy" hidden="false" id="5" name="_CategoryHierarchy" order="3"/>
+        <boolean default="false" desc="" dropdown="" fullname="Current Index" hidden="true" id="6" name="_CurrentIndex" order="6"/>
+        <boolean default="false" desc="" dropdown="" fullname="Requested Index" hidden="true" id="7" name="_RequestedIndex" order="7"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks>
+            <receiver blockID="333" id="1"/>
+            <receiver blockID="332" id="2"/>
+        </blocks>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_175_175_CameraFollowPlayer" desc="" description="" design="true" drawOrder="0" id="175" language="" name="Camera Follow Player" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_202_202_DieinPit" desc="" description="" design="true" drawOrder="0" id="202" language="" name="Die in Pit" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Set the amount of time the screen will fade after falling in. In and Out will be the same." dropdown="" fullname="Fade Time" hidden="false" id="1" name="_FadeTime" order="1"/>
+        <number default="0" desc="Set this to how long you wish to wait before reloading the scene.&lt;br&gt;Useful for displaying a Spawned Actor on Death animation so it completes before the reload." dropdown="" fullname="Time Before Reload" hidden="false" id="2" name="_TimeBeforeReload" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_163_163_Jumping" desc="This Behavior controls the player's jumping." description="This Behavior controls the player's jumping." design="true" drawOrder="0" id="163" language="" name="Jumping" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="Key Released?" hidden="true" id="1" name="_KeyReleased" order="1"/>
+        <boolean default="false" desc="" dropdown="" fullname="Can Jump?" hidden="true" id="2" name="_CanJump" order="2"/>
+        <control default="" desc="Select the key used for jumping." dropdown="" fullname="Jump Key" hidden="false" id="3" name="_JumpKey" order="3"/>
+        <number default="0.075" desc="Maximum amount of time that the&lt;br&gt;&#10;jump force will be applied when holding down the jump button.&lt;br&gt;&lt;br&gt;&#10;default = 0.075" dropdown="" fullname="Max Jump Time" hidden="false" id="8" name="_MaxJumpTime" order="5"/>
+        <animation default="" desc="Animation used for jumping to the right." dropdown="" fullname="Jump Right Animation" hidden="false" id="12" name="_JumpRightAnimation" order="7"/>
+        <animation default="" desc="Animation used for jumping to the left." dropdown="" fullname="Jump Left Animation" hidden="false" id="13" name="_JumpLeftAnimation" order="8"/>
+        <boolean default="false" desc="" dropdown="" fullname="Prevent Jumping?" hidden="true" id="14" name="_PreventJumping" order="9"/>
+        <number default="0" desc="" dropdown="" fullname="Elapsed Jump Time" hidden="true" id="15" name="_ElapsedJumpTime" order="10"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0" desc="" dropdown="" fullname="oldY" hidden="true" id="17" name="_oldY" order="12"/>
+        <number default="0" desc="" dropdown="" fullname="Current Jump Time" hidden="true" id="16" name="_CurrentJumpTime" order="11"/>
+        <sound default="" desc="" dropdown="" fullname="Jump Sound" hidden="false" id="19" name="_JumpSound" order="13"/>
+        <number default="0.75" desc="When releasing the jump key before reaching the max&lt;br&gt;&#10;height, what is the rate of upward slowdown?&lt;br&gt;&lt;br&gt;&#10;default = 0.75" dropdown="" fullname="Jumping Slowdown" hidden="false" id="18" name="_JumpingSlowdown" order="6"/>
+        <number default="35" desc="Amount of force applied when jumping.&lt;br&gt;&#10;Default = 35" dropdown="" fullname="Jump Force" hidden="false" id="20" name="_JumpForce" order="4"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_108_108_Slowdown" desc="This Behavior is responsible for slowing the player down when no direction keys are being pressed." description="This Behavior is responsible for slowing the player down when no direction keys are being pressed." design="true" drawOrder="0" id="108" language="" name="Slowdown" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <control default="" desc="Select the control used to move to the right." dropdown="" fullname="Right Key" hidden="false" id="1" name="_RightKey" order="1"/>
+        <control default="" desc="Select the control used to move to the left." dropdown="" fullname="Left Key" hidden="false" id="2" name="_LeftKey" order="2"/>
+        <number default="0.9" desc="Rate of slowdown while on the ground.&lt;br&gt;&lt;br&gt;&#10;default = 0.9" dropdown="" fullname="Ground Slowdown" hidden="false" id="3" name="_GroundSlowdown" order="3"/>
+        <number default="0.99" desc="Rate of slowdown while in the air.&lt;br&gt;&lt;br&gt;&#10;default = 0.99" dropdown="" fullname="Air Slowdown" hidden="false" id="4" name="_AirSlowdown" order="4"/>
+        <number default="0.975" desc="Rate of slowdown while ducking.&lt;br&gt;&lt;br&gt;&#10;default = 0.975" dropdown="" fullname="Ducking Slowdown" hidden="false" id="5" name="_DuckingSlowdown" order="5"/>
+        <number default="0.975" desc="Rate of slowdown while moving through the air.&lt;br&gt;&lt;br&gt;&#10;default = 0.975" dropdown="" fullname="Moving Air Slowdown" hidden="false" id="6" name="_MovingAirSlowdown" order="6"/>
+        <number default="0.95" desc="Amount of horizontal slowdown while in the water&lt;br&gt;&#10;default = 0.95" dropdown="" fullname="Water Slowdown" hidden="false" id="7" name="_WaterSlowdown" order="7"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_228_228_ZoominExplosion" desc="When this explosion is created, it will grow bigger or smaller depending on what percent of zoom you use. Then fade out." description="When this explosion is created, it will grow bigger or smaller depending on what percent of zoom you use. Then fade out." design="true" drawOrder="0" id="228" language="" name="Zoom in Explosion" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="100" desc="Set this to zoom an explosion in or out. In is a default of 100%" dropdown="" fullname="Zoom Size" hidden="false" id="1" name="_ZoomSize" order="1"/>
+        <number default="0" desc="How long it takes to zoom in or out to the specified size." dropdown="" fullname="Zoom Time" hidden="false" id="2" name="_ZoomTime" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_227_227_AwardHealthuponCollision" desc="Used to award health with health pickup items." description="Used to award health with health pickup items." design="true" drawOrder="0" id="227" language="" name="Award Health upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_226_226_DrawHealth" desc="" description="" design="true" drawOrder="0" id="226" language="" name="Draw Health" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="Blinking" hidden="false" id="1" name="_Blinking" order="1"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_107_107_OnGround" desc="This Behavior determines if the player is on the ground and sets an Actor Level Attribute as appropriate." description="This Behavior determines if the player is on the ground and sets an Actor Level Attribute as appropriate." design="true" drawOrder="0" id="107" language="" name="On Ground" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="Hit Ground?" hidden="true" id="1" name="_HitGround" order="1"/>
+        <boolean default="false" desc="Only detect that the player is on the ground if standing on a tile?" dropdown="" fullname="Limit To Tiles?" hidden="false" id="2" name="_LimitToTiles" order="2"/>
+        <list default="list" desc="If not limited to tiles, enter in any Actor Group that you want to exclude from ground collisions." dropdown="" fullname="Excluded Groups" hidden="false" id="3" name="_ExcludedGroups" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_225_225_ReloadSceneonDeath" desc="Reload the scene if an actor with this behavior has it's health depleted. Requires the Health behvaior to function correctly." description="Reload the scene if an actor with this behavior has it's health depleted. Requires the Health behvaior to function correctly." design="true" drawOrder="0" id="225" language="" name="Reload Scene on Death" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="How many seconds should you wait before starting the reload?" dropdown="" fullname="Delay" hidden="false" id="1" name="_Delay" order="1"/>
+        <number default="0" desc="Number of seconds for the fade out transition." dropdown="" fullname="Fade Out Time" hidden="false" id="2" name="_FadeOutTime" order="2"/>
+        <number default="0" desc="Number of seconds for the scene to fade back in after reloading." dropdown="" fullname="Fade In Time" hidden="false" id="3" name="_FadeInTime" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_221_221_SwitchWeapon" desc="Handles weapon switching and positioning." description="Handles weapon switching and positioning." design="true" drawOrder="0" id="221" language="" name="Weapon Graphic Handler" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="" dropdown="" fullname="Weapon" hidden="true" id="1" name="_Weapon" order="1"/>
+        <number default="0" desc="The total number of weapons available to the player." dropdown="" fullname="Number of Weapons" hidden="false" id="2" name="_NumberofWeapons" order="2"/>
+        <actor default="" desc="" dropdown="" fullname="Weapon Graphic" hidden="true" id="3" name="_WeaponGraphic" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_222_222_EnemyFireProjectile" desc="Fires projectiles at the player from an enemy." description="Fires projectiles at the player from an enemy." design="true" drawOrder="0" id="222" language="" name="Enemy Fire Projectile" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="How frequently should the enemy fire at the player? (In Seconds)" dropdown="" fullname="Delay" hidden="false" id="1" name="_Delay" order="1"/>
+        <boolean default="false" desc="" dropdown="" fullname="Firing" hidden="true" id="2" name="_Firing" order="2"/>
+        <actor default="" desc="" dropdown="" fullname="Player" hidden="true" id="3" name="_Player" order="3"/>
+        <number default="30" desc="" dropdown="" fullname="Firing Speed" hidden="false" id="4" name="_FiringSpeed" order="4"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_223_223_UpdatePlayerPosition" desc="This behavior periodically updates the X and Y position of the player in global variables. Those variables are used so that enemies and other actors can easily determine where the player is in order to shoot him." description="This behavior periodically updates the X and Y position of the player in global variables. Those variables are used so that enemies and other actors can easily determine where the player is in order to shoot him." design="true" drawOrder="0" id="223" language="" name="Update Player Position" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_216_216_Walking" desc="This Behavior will handle the player's walking movement while on the ground." description="This Behavior will handle the player's walking movement while on the ground." design="true" drawOrder="0" id="216" language="" name="Walking" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <control default="" desc="Select the key used to move to the right." dropdown="" fullname="Move Right Key" hidden="false" id="1" name="_MoveRightKey" order="4"/>
+        <control default="" desc="Select the key used to move to the left." dropdown="" fullname="Move Left Key" hidden="false" id="2" name="_MoveLeftKey" order="5"/>
+        <number default="85" desc="How fast should the Actor get up to speed?&#10;&lt;br&gt;&lt;br&gt;&#10;default = 85" dropdown="" fullname="Acceleration" hidden="false" id="3" name="_Acceleration" order="2"/>
+        <number default="20" desc="Maximum speed while walking&lt;br&gt;&lt;br&gt;&#10;default = 20" dropdown="" fullname="Max Walking Speed" hidden="false" id="4" name="_MaxWalkingSpeed" order="3"/>
+        <boolean default="false" desc="Should the speed of the Actor be limited to&lt;br&gt;&#10;the maximum speed specified?" dropdown="" fullname="Limit Speed?" hidden="false" id="5" name="_LimitSpeed" order="6"/>
+        <animation default="" desc="" dropdown="" fullname="Walk Right Animation" hidden="false" id="6" name="_WalkRightAnimation" order="9"/>
+        <animation default="" desc="" dropdown="" fullname="Walk Left Animation" hidden="false" id="7" name="_WalkLeftAnimation" order="10"/>
+        <animation default="" desc="" dropdown="" fullname="Idle Right Animation" hidden="false" id="8" name="_IdleRightAnimation" order="7"/>
+        <animation default="" desc="" dropdown="" fullname="Idle Left Animation" hidden="false" id="9" name="_IdleLeftAnimation" order="8"/>
+        <boolean default="false" desc="" dropdown="" fullname="Prevent Walking?" hidden="true" id="10" name="_PreventWalking" order="11"/>
+        <boolean default="true" desc="Does the actor initially face the right direction?" dropdown="" fullname="Initially Facing Right?" hidden="false" id="11" name="_InitiallyFacingRight" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="1"/>
+        <blocks>
+            <receiver blockID="461" id="1"/>
+            <receiver blockID="463" id="2"/>
+            <receiver blockID="465" id="3"/>
+            <receiver blockID="460" id="4"/>
+            <receiver blockID="464" id="5"/>
+            <receiver blockID="462" id="6"/>
+            <receiver blockID="459" id="7"/>
+        </blocks>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_217_217_FadeOutandRecycleafterTime" desc="Modified version of Fade Out and Die for use with particles and other recycled actors." description="Modified version of Fade Out and Die for use with particles and other recycled actors." design="true" drawOrder="0" id="217" language="" name="Fade Out and Recycle after Time" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="1" desc="The time in seconds it takes for the actor to begin fading out.&#10;&lt;p&gt;&#10;Default: 1" dropdown="" fullname="Start Fading After" hidden="false" id="1" name="_StartFadingAfter" order="1"/>
+        <number default="3" desc="The amount of time in seconds it takes the actor to fade all the way out and die.&#10;&lt;p&gt;&#10;Default: 3" dropdown="" fullname="Fade Time" hidden="false" id="2" name="_FadeTime" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_114_114_Falling" desc="This Behavior is responsible for detecting when the player is falling, and playing the proper animation." description="This Behavior is responsible for detecting when the player is falling, and playing the proper animation." design="true" drawOrder="0" id="114" language="" name="Falling" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="" dropdown="" fullname="Old Y" hidden="true" id="1" name="_OldY" order="1"/>
+        <boolean default="false" desc="" dropdown="" fullname="Can Fall?" hidden="true" id="2" name="_CanFall" order="2"/>
+        <animation default="" desc="" dropdown="" fullname="Fall Right Animation" hidden="false" id="3" name="_FallRightAnimation" order="3"/>
+        <animation default="" desc="" dropdown="" fullname="Fall Left Animation" hidden="false" id="4" name="_FallLeftAnimation" order="4"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_218_218_CreateTracer" desc="Creates dust particles behind the actor as he runs." description="Creates dust particles behind the actor as he runs." design="true" drawOrder="0" id="218" language="" name="Create Dust" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Delay between creation of new tracers (in seconds)." dropdown="" fullname="Delay" hidden="false" id="1" name="_Delay" order="1"/>
+        <boolean default="false" desc="If this is true, a tracer is currently being created." dropdown="" fullname="Creating Tracer" hidden="true" id="2" name="_CreatingTracer" order="2"/>
+        <boolean default="false" desc="" dropdown="" fullname="Trace" hidden="true" id="3" name="_Trace" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_213_213_Health" desc="Gives actor the notion of Health." description="Gives actor the notion of Health." design="true" drawOrder="0" id="213" language="" name="Health" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Decrements by this amount if the colliding actor did not specify a damage amount." dropdown="" fullname="Default Damage" hidden="false" id="1" name="defaultDmg" order="7"/>
+        <number default="0" desc="" dropdown="" fullname="cacheDmg" hidden="true" id="2" name="cacheDmg" order="4"/>
+        <number default="0" desc="Current health of this actor." dropdown="" fullname="currHealth" hidden="true" id="4" name="currHealth" order="3"/>
+        <number default="0.0" desc="Upper bound for health." dropdown="" fullname="Max Health" hidden="false" id="5" name="maxHealth" order="6"/>
+        <number default="0.0" desc="Starting amount of health. Can't exceed max health." dropdown="" fullname="Initial Health" hidden="false" id="6" name="initHealth" order="5"/>
+        <actor default="" desc="Don't let the same actor cause multiple damages to happen." dropdown="" fullname="actorCache" hidden="true" id="7" name="actorCache" order="2"/>
+        <boolean default="true" desc="Make this actor die when its health reaches or falls below 0." dropdown="" fullname="Die When Health is Depleted?" hidden="false" id="8" name="dieOnDepletedHealth" order="8"/>
+        <boolean default="false" desc="" dropdown="" fullname="Is Invincible?" hidden="false" id="9" name="isInvincible" order="1"/>
+        <boolean default="false" desc="" dropdown="" fullname="Temporarily Invulnerable?" hidden="true" id="10" name="isTempInvulnerable" order="0"/>
+        <number default="0" desc="The amount of time the Actor will be invulnerable after being hit.&#10;&lt;br&gt;&lt;br&gt;&#10;Value of 0 (zero) means that the Actor will never become invulnerable.&#10;&lt;br&gt;&#10;Value &gt; 0 means that the Actor will be invulernable for that many seconds." dropdown="" fullname="Temporary Invulnerability Time" hidden="false" id="11" name="tempInvulnerabilityTime" order="9"/>
+        <number default="0" desc="The amount of time to wait before the Actor can be hit by the same Actor it just collided with. &lt;br&gt;&lt;br&gt;&#10;Value of 0 (zero) means that the Actor can't collide with the same actor twice, unless it collides with another actor first.&#10;&lt;br&gt;&#10;Value &gt; 0 means that a collision with the same Actor can not occur for that many seconds." dropdown="" fullname="Collide With Same Actor After" hidden="false" id="12" name="sameActorCollideAfter" order="10"/>
+        <boolean default="false" desc="" dropdown="" fullname="beingHit" hidden="true" id="13" name="_beingHit" order="12"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="11"/>
+        <blocks>
+            <receiver blockID="444" id="1"/>
+            <receiver blockID="448" id="2"/>
+            <receiver blockID="443" id="3"/>
+            <receiver blockID="447" id="4"/>
+            <receiver blockID="449" id="5"/>
+            <receiver blockID="445" id="6"/>
+            <receiver blockID="446" id="7"/>
+        </blocks>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_214_214_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="214" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_215_215_SpawnActoruponDeath" desc="Spawns the Actor Type of your choice when this Actor dies.  You can specify the X &amp; Y offset relative to the main Actor, as well as the lifetime of the spawned actor before it dies.  Useful for death animations." description="Spawns the Actor Type of your choice when this Actor dies.  You can specify the X &amp; Y offset relative to the main Actor, as well as the lifetime of the spawned actor before it dies.  Useful for death animations." design="true" drawOrder="0" id="215" language="" name="Spawn Actor upon Death" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actortype default="457" desc="" dropdown="" fullname="Actor Type to Spawn" hidden="false" id="1" name="actTypeToSpawn" order="0"/>
+        <number default="0" desc="Horizontal offset from the original actor" dropdown="" fullname="X Offset" hidden="false" id="2" name="xOffset" order="2"/>
+        <number default="0" desc="Vertical offset from the original actor" dropdown="" fullname="Y Offset" hidden="false" id="3" name="yOffset" order="3"/>
+        <number default="0" desc="How long should the actor stay alive before disappearing?" dropdown="" fullname="Lifespan" hidden="false" id="4" name="lifespan" order="1"/>
+        <actor default="" desc="" dropdown="" fullname="Spawned Actor" hidden="true" id="5" name="_SpawnedActor" order="5"/>
+        <sound default="" desc="" dropdown="" fullname="Explode" hidden="false" id="6" name="_Explode" order="6"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="4"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_123_123_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="123" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_210_210_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="210" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+</pack>

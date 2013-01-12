@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="-1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <joystick-show-hide comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                </joystick-show-hide>
+            </group>
+        </init>
+    </group>
+    <group eventID="-1" id="1">
+        <step comment="false" x="15" y="95">
+            <group eventID="-1" id="-1">
+                <do-ios comment="false" x="26" y="120">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="140">
+                            <group eventID="-1" id="-1">
+                                <set-dxy comment="false" x="48" y="175">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                        </get-dxy>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <times comment="false" id="0" x="0" y="0">
+                                                <trig-master comment="false" id="0" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                    <to-degreesradians comment="false" id="1" x="0" y="0">
+                                                        <int id="0" val="1"/>
+                                                        <joystick-direction comment="false" id="1" x="0" y="0"/>
+                                                    </to-degreesradians>
+                                                </trig-master>
+                                                <joystick-magnitude comment="false" id="1" x="0" y="0"/>
+                                            </times>
+                                            <int id="1" val="-1"/>
+                                        </times>
+                                    </plus>
+                                </set-dxy>
+                                <set-dxy comment="false" x="48" y="248">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-dxy>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <times comment="false" id="0" x="0" y="0">
+                                                <trig-master comment="false" id="0" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                    <to-degreesradians comment="false" id="1" x="0" y="0">
+                                                        <int id="0" val="1"/>
+                                                        <joystick-direction comment="false" id="1" x="0" y="0"/>
+                                                    </to-degreesradians>
+                                                </trig-master>
+                                                <joystick-magnitude comment="false" id="1" x="0" y="0"/>
+                                            </times>
+                                            <int id="1" val="-1"/>
+                                        </times>
+                                    </plus>
+                                </set-dxy>
+                                <setangle comment="false" x="48" y="321">
+                                    <ACTOR eid="this" id="0"/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <to-degreesradians comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                            <atan2 comment="false" id="1" x="0" y="0">
+                                                <get-dxy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-dxy>
+                                                <get-dxy comment="false" id="1" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-dxy>
+                                            </atan2>
+                                        </to-degreesradians>
+                                        <int id="1" val="90"/>
+                                    </minus>
+                                </setangle>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <abs comment="false" id="0" x="0" y="0">
+                                    <joystick-magnitude comment="false" id="0" x="0" y="0"/>
+                                </abs>
+                                <int id="1" val="0"/>
+                            </more>
+                        </if>
+                    </group>
+                </do-ios>
+                <do-flash comment="false" x="26" y="408">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="428">
+                            <group eventID="-1" id="-1">
+                                <setav comment="false" x="48" y="461">
+                                    <ACTOR eid="this" id="0"/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <getangvel comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getangvel>
+                                        <int id="1" val="8"/>
+                                    </minus>
+                                </setav>
+                            </group>
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <CONTROL eid="2" id="1"/>
+                            </keystate>
+                        </if>
+                        <if comment="false" x="37" y="518">
+                            <group eventID="-1" id="-1">
+                                <setav comment="false" x="48" y="551">
+                                    <ACTOR eid="this" id="0"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <getangvel comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getangvel>
+                                        <int id="1" val="8"/>
+                                    </plus>
+                                </setav>
+                            </group>
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <CONTROL eid="3" id="1"/>
+                            </keystate>
+                        </if>
+                        <if comment="false" x="37" y="608">
+                            <group eventID="-1" id="-1">
+                                <set-dxy comment="false" x="48" y="641">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                        </get-dxy>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <trig-master comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                                <to-degreesradians comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                    <minus comment="false" id="1" x="0" y="0">
+                                                        <getdir comment="false" id="0" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                        </getdir>
+                                                        <int id="1" val="90"/>
+                                                    </minus>
+                                                </to-degreesradians>
+                                            </trig-master>
+                                            <int id="1" val="-1"/>
+                                        </times>
+                                    </plus>
+                                </set-dxy>
+                                <set-dxy comment="false" x="48" y="722">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-dxy>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <trig-master comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <to-degreesradians comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                    <minus comment="false" id="1" x="0" y="0">
+                                                        <getdir comment="false" id="0" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                        </getdir>
+                                                        <int id="1" val="90"/>
+                                                    </minus>
+                                                </to-degreesradians>
+                                            </trig-master>
+                                            <int id="1" val="-1"/>
+                                        </times>
+                                    </plus>
+                                </set-dxy>
+                            </group>
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <CONTROL eid="4" id="1"/>
+                            </keystate>
+                        </if>
+                    </group>
+                </do-flash>
+                <set-dxy comment="false" x="26" y="827">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-dxy>
+                        <int id="1" val="0.95"/>
+                    </times>
+                </set-dxy>
+                <set-dxy comment="false" x="26" y="872">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-dxy>
+                        <int id="1" val="0.95"/>
+                    </times>
+                </set-dxy>
+                <setav comment="false" x="26" y="917">
+                    <ACTOR eid="this" id="0"/>
+                    <times comment="false" id="1" x="0" y="0">
+                        <getangvel comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getangvel>
+                        <int id="1" val="0.95"/>
+                    </times>
+                </setav>
+            </group>
+        </step>
+    </group>
+    <group eventID="-1" id="2">
+        <collide comment="false" x="15" y="979">
+            <group eventID="-1" id="-1"/>
+        </collide>
+    </group>
+    <group eventID="-1" id="3">
+        <draw comment="false" x="15" y="1052">
+            <group eventID="-1" id="-1"/>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

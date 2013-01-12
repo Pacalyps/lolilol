@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-0-11 comment="false" x="26" y="40">
+                    <div comment="false" id="0" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                            <get-val-0-1 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                        <int id="1" val="2"/>
+                    </div>
+                </set-val-0-11>
+                <set-val-0-12 comment="false" x="26" y="75">
+                    <div comment="false" id="0" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <get-val-0-6 comment="false" id="0" x="0" y="0"/>
+                            <get-val-0-2 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                        <int id="1" val="2"/>
+                    </div>
+                </set-val-0-12>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="73">
+                            <group eventID="-1" id="-1">
+                                <set-val-0-13 comment="false" x="48" y="98">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <to-degreesradians comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                            <atan2 comment="false" id="1" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <plus comment="false" id="0" x="0" y="0">
+                                                        <get-xy comment="false" id="0" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="5"/>
+                                                        </get-xy>
+                                                        <get-val-0-12 comment="false" id="1" x="0" y="0"/>
+                                                    </plus>
+                                                    <touch-drag-release comment="false" id="1" x="0" y="0">
+                                                        <int id="0" val="1"/>
+                                                        <int id="1" val="1"/>
+                                                    </touch-drag-release>
+                                                </minus>
+                                                <minus comment="false" id="1" x="0" y="0">
+                                                    <plus comment="false" id="0" x="0" y="0">
+                                                        <get-xy comment="false" id="0" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="4"/>
+                                                        </get-xy>
+                                                        <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                                    </plus>
+                                                    <touch-drag-release comment="false" id="1" x="0" y="0">
+                                                        <int id="0" val="1"/>
+                                                        <int id="1" val="0"/>
+                                                    </touch-drag-release>
+                                                </minus>
+                                            </atan2>
+                                        </to-degreesradians>
+                                        <int id="1" val="90"/>
+                                    </plus>
+                                </set-val-0-13>
+                            </group>
+                            <get-val-0-9 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <if comment="false" x="37" y="176">
+                            <group eventID="-1" id="-1">
+                                <set-val-0-19 comment="false" x="48" y="239">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="4"/>
+                                            </get-xy>
+                                            <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                        </plus>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <trig-master comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                                <to-degreesradians comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <get-val-0-13 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="90"/>
+                                                    </plus>
+                                                </to-degreesradians>
+                                            </trig-master>
+                                            <get-val-0-18 comment="false" id="1" x="0" y="0"/>
+                                        </times>
+                                    </plus>
+                                </set-val-0-19>
+                                <set-val-0-20 comment="false" x="48" y="305">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="5"/>
+                                            </get-xy>
+                                            <get-val-0-12 comment="false" id="1" x="0" y="0"/>
+                                        </plus>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <trig-master comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <to-degreesradians comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <get-val-0-13 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="90"/>
+                                                    </plus>
+                                                </to-degreesradians>
+                                            </trig-master>
+                                            <get-val-0-18 comment="false" id="1" x="0" y="0"/>
+                                        </times>
+                                    </plus>
+                                </set-val-0-20>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <sqrt comment="false" id="0" x="0" y="0">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <pow comment="false" id="0" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <touch-drag-release comment="false" id="0" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                    <int id="1" val="0"/>
+                                                </touch-drag-release>
+                                                <plus comment="false" id="1" x="0" y="0">
+                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                        <int id="1" val="4"/>
+                                                    </get-xy>
+                                                    <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                                </plus>
+                                            </minus>
+                                            <int id="1" val="2"/>
+                                        </pow>
+                                        <pow comment="false" id="1" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <touch-drag-release comment="false" id="0" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                    <int id="1" val="1"/>
+                                                </touch-drag-release>
+                                                <plus comment="false" id="1" x="0" y="0">
+                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                        <int id="1" val="5"/>
+                                                    </get-xy>
+                                                    <get-val-0-12 comment="false" id="1" x="0" y="0"/>
+                                                </plus>
+                                            </minus>
+                                            <int id="1" val="2"/>
+                                        </pow>
+                                    </plus>
+                                </sqrt>
+                                <get-val-0-18 comment="false" id="1" x="0" y="0"/>
+                            </more>
+                        </if>
+                        <else comment="false" x="37" y="383">
+                            <group eventID="-1" id="-1">
+                                <set-val-0-19 comment="false" x="48" y="403">
+                                    <touch-drag-release comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <int id="1" val="0"/>
+                                    </touch-drag-release>
+                                </set-val-0-19>
+                                <set-val-0-20 comment="false" x="48" y="436">
+                                    <touch-drag-release comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <int id="1" val="1"/>
+                                    </touch-drag-release>
+                                </set-val-0-20>
+                            </group>
+                        </else>
+                    </group>
+                    <began-dragged-released-touch comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                    </began-dragged-released-touch>
+                </if>
+                <set-val-0-17 comment="false" x="26" y="493">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-17>
+                <if comment="false" x="26" y="518">
+                    <group eventID="-1" id="-1">
+                        <set-val-0-17 comment="false" x="37" y="553">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-17>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <as-number comment="false" id="0" x="0" y="0">
+                            <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                        </as-number>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+                <if comment="false" x="26" y="590">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="615">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="648">
+                                    <group eventID="-1" id="-1">
+                                        <set-val-0-17 comment="false" x="59" y="696">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-0-17>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <get-val-0-16 comment="false" id="0" x="0" y="0"/>
+                                        <more comment="false" id="1" x="0" y="0">
+                                            <touch-drag-release comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                                <int id="1" val="0"/>
+                                            </touch-drag-release>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="4"/>
+                                                </get-xy>
+                                                <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                        </more>
+                                    </and>
+                                </if>
+                                <else-if comment="false" x="48" y="733">
+                                    <group eventID="-1" id="-1">
+                                        <set-val-0-17 comment="false" x="59" y="781">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-0-17>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <not comment="false" id="0" x="0" y="0">
+                                            <get-val-0-16 comment="false" id="0" x="0" y="0"/>
+                                        </not>
+                                        <more comment="false" id="1" x="0" y="0">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="4"/>
+                                                </get-xy>
+                                                <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <touch-drag-release comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                                <int id="1" val="0"/>
+                                            </touch-drag-release>
+                                        </more>
+                                    </and>
+                                </else-if>
+                            </group>
+                            <began-dragged-released-touch comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </began-dragged-released-touch>
+                        </if>
+                    </group>
+                    <get-val-0-15 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="26" y="842">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="867">
+                            <group eventID="-1" id="-1">
+                                <set-val-0-17 comment="false" x="48" y="907">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-17>
+                            </group>
+                            <or comment="false" id="0" x="0" y="0">
+                                <as-boolean comment="false" id="0" x="0" y="0">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="Catapult Game Controller"/>
+                                        <int id="1" val="_InitEndofGame"/>
+                                    </scene-get-attribute>
+                                </as-boolean>
+                                <not comment="false" id="1" x="0" y="0">
+                                    <as-boolean comment="false" id="0" x="0" y="0">
+                                        <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="Catapult Game Controller"/>
+                                            <int id="1" val="_CanShoot"/>
+                                        </scene-get-attribute>
+                                    </as-boolean>
+                                </not>
+                            </or>
+                        </if>
+                    </group>
+                    <get-val-0-23 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="956">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="976">
+                            <group eventID="-1" id="-1">
+                                <set-val-0-17 comment="false" x="48" y="1006">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-17>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-0-24 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                </else>
+                <if comment="false" x="26" y="1055">
+                    <group eventID="-1" id="-1">
+                        <set-val-0-9 comment="false" x="37" y="1098">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-9>
+                        <create-recycled-actor comment="false" x="37" y="1123">
+                            <ACTORTYPE eid="0" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-recycled-actor>
+                        <set-val-0-10 comment="false" x="37" y="1150">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-0-10>
+                        <set-attribute comment="false" x="37" y="1177">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="Projectile"/>
+                            <int id="2" val="_attachedtocatapult"/>
+                            <true comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-val-0-14 comment="false" x="37" y="1209">
+                            <get-wh comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="10"/>
+                                <int id="1" val="2"/>
+                            </get-wh>
+                        </set-val-0-14>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <and comment="false" id="0" x="0" y="0">
+                            <began-dragged-released-touch comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </began-dragged-released-touch>
+                            <get-val-0-17 comment="false" id="1" x="0" y="0"/>
+                        </and>
+                        <not comment="false" id="1" x="0" y="0">
+                            <get-val-0-9 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="1254">
+                    <group eventID="-1" id="-1">
+                        <set-val-0-9 comment="false" x="37" y="1292">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-9>
+                        <set-attribute comment="false" x="37" y="1317">
+                            <ACTOR eid="var" id="0" vid="10"/>
+                            <int id="1" val="Projectile"/>
+                            <int id="2" val="_attachedtocatapult"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <if comment="false" x="37" y="1349">
+                            <group eventID="-1" id="-1">
+                                <scene-set-attribute comment="false" x="48" y="1374">
+                                    <int id="0" val="Catapult Game Controller"/>
+                                    <int id="1" val="_CanShoot"/>
+                                    <false comment="false" id="2" x="0" y="0"/>
+                                </scene-set-attribute>
+                                <dolater comment="false" x="48" y="1399">
+                                    <group eventID="-1" id="-1">
+                                        <scene-set-attribute comment="false" x="59" y="1431">
+                                            <int id="0" val="Catapult Game Controller"/>
+                                            <int id="1" val="_CanShoot"/>
+                                            <true comment="false" id="2" x="0" y="0"/>
+                                        </scene-set-attribute>
+                                    </group>
+                                    <get-val-0-22 comment="false" id="0" x="0" y="0"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <get-val-0-23 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="1480">
+                            <group eventID="-1" id="-1">
+                                <set-val-0-24 comment="false" x="48" y="1500">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-24>
+                                <dolater comment="false" x="48" y="1525">
+                                    <group eventID="-1" id="-1">
+                                        <say-this comment="false" x="59" y="1557">
+                                            <int id="0" val="NoCatapultTrue"/>
+                                        </say-this>
+                                    </group>
+                                    <get-val-0-22 comment="false" id="0" x="0" y="0"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                        </else>
+                        <set-xy comment="false" x="37" y="1601">
+                            <ACTOR eid="var" id="0" vid="10"/>
+                            <int id="1" val="0"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-val-0-19 comment="false" id="0" x="0" y="0"/>
+                                    <get-wh comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="10"/>
+                                        <int id="1" val="2"/>
+                                    </get-wh>
+                                </minus>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <trig-master comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <to-degreesradians comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="1"/>
+                                            <minus comment="false" id="1" x="0" y="0">
+                                                <get-val-0-13 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="90"/>
+                                            </minus>
+                                        </to-degreesradians>
+                                    </trig-master>
+                                    <get-val-0-14 comment="false" id="1" x="0" y="0"/>
+                                </times>
+                            </plus>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="1674">
+                            <ACTOR eid="var" id="0" vid="10"/>
+                            <int id="1" val="1"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-val-0-20 comment="false" id="0" x="0" y="0"/>
+                                    <get-wh comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="10"/>
+                                        <int id="1" val="3"/>
+                                    </get-wh>
+                                </minus>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <trig-master comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <to-degreesradians comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="1"/>
+                                            <minus comment="false" id="1" x="0" y="0">
+                                                <get-val-0-13 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="90"/>
+                                            </minus>
+                                        </to-degreesradians>
+                                    </trig-master>
+                                    <get-val-0-14 comment="false" id="1" x="0" y="0"/>
+                                </times>
+                            </plus>
+                        </set-xy>
+                        <set-dxy comment="false" x="37" y="1747">
+                            <ACTOR eid="var" id="0" vid="10"/>
+                            <int id="1" val="0"/>
+                            <times comment="false" id="2" x="0" y="0">
+                                <trig-master comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <to-degreesradians comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <get-val-0-13 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="90"/>
+                                        </minus>
+                                    </to-degreesradians>
+                                </trig-master>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <get-val-0-21 comment="false" id="0" x="0" y="0"/>
+                                    <div comment="false" id="1" x="0" y="0">
+                                        <sqrt comment="false" id="0" x="0" y="0">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <pow comment="false" id="0" x="0" y="0">
+                                                    <minus comment="false" id="0" x="0" y="0">
+                                                        <get-val-0-19 comment="false" id="0" x="0" y="0"/>
+                                                        <plus comment="false" id="1" x="0" y="0">
+                                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                                <ACTOR eid="this" id="0"/>
+                                                                <int id="1" val="4"/>
+                                                            </get-xy>
+                                                            <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                                        </plus>
+                                                    </minus>
+                                                    <int id="1" val="2"/>
+                                                </pow>
+                                                <pow comment="false" id="1" x="0" y="0">
+                                                    <minus comment="false" id="0" x="0" y="0">
+                                                        <get-val-0-20 comment="false" id="0" x="0" y="0"/>
+                                                        <plus comment="false" id="1" x="0" y="0">
+                                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                                <ACTOR eid="this" id="0"/>
+                                                                <int id="1" val="5"/>
+                                                            </get-xy>
+                                                            <get-val-0-12 comment="false" id="1" x="0" y="0"/>
+                                                        </plus>
+                                                    </minus>
+                                                    <int id="1" val="2"/>
+                                                </pow>
+                                            </plus>
+                                        </sqrt>
+                                        <get-val-0-18 comment="false" id="1" x="0" y="0"/>
+                                    </div>
+                                </times>
+                            </times>
+                        </set-dxy>
+                        <set-dxy comment="false" x="37" y="1827">
+                            <ACTOR eid="var" id="0" vid="10"/>
+                            <int id="1" val="1"/>
+                            <times comment="false" id="2" x="0" y="0">
+                                <trig-master comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <to-degreesradians comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <get-val-0-13 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="90"/>
+                                        </minus>
+                                    </to-degreesradians>
+                                </trig-master>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <get-val-0-21 comment="false" id="0" x="0" y="0"/>
+                                    <div comment="false" id="1" x="0" y="0">
+                                        <sqrt comment="false" id="0" x="0" y="0">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <pow comment="false" id="0" x="0" y="0">
+                                                    <minus comment="false" id="0" x="0" y="0">
+                                                        <get-val-0-19 comment="false" id="0" x="0" y="0"/>
+                                                        <plus comment="false" id="1" x="0" y="0">
+                                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                                <ACTOR eid="this" id="0"/>
+                                                                <int id="1" val="4"/>
+                                                            </get-xy>
+                                                            <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                                        </plus>
+                                                    </minus>
+                                                    <int id="1" val="2"/>
+                                                </pow>
+                                                <pow comment="false" id="1" x="0" y="0">
+                                                    <minus comment="false" id="0" x="0" y="0">
+                                                        <get-val-0-20 comment="false" id="0" x="0" y="0"/>
+                                                        <plus comment="false" id="1" x="0" y="0">
+                                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                                <ACTOR eid="this" id="0"/>
+                                                                <int id="1" val="5"/>
+                                                            </get-xy>
+                                                            <get-val-0-12 comment="false" id="1" x="0" y="0"/>
+                                                        </plus>
+                                                    </minus>
+                                                    <int id="1" val="2"/>
+                                                </pow>
+                                            </plus>
+                                        </sqrt>
+                                        <get-val-0-18 comment="false" id="1" x="0" y="0"/>
+                                    </div>
+                                </times>
+                            </times>
+                        </set-dxy>
+                        <play-sound4 comment="false" x="37" y="1907">
+                            <int id="0" val="0"/>
+                            <SOUND eid="var" id="1" vid="25"/>
+                        </play-sound4>
+                        <set-game-val-1 comment="false" x="37" y="1934">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                                </as-number>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-game-val-1>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <began-dragged-released-touch comment="false" id="0" x="0" y="0">
+                            <int id="0" val="2"/>
+                        </began-dragged-released-touch>
+                        <get-val-0-9 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="1981">
+                    <group eventID="-1" id="-1">
+                        <set-val-0-9 comment="false" x="37" y="2016">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-9>
+                        <recycle comment="false" x="37" y="2041">
+                            <ACTOR eid="var" id="0" vid="10"/>
+                        </recycle>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <get-val-0-17 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                        <get-val-0-9 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <to-screen-space comment="false" x="37" y="65"/>
+                        <set-thickness comment="false" x="37" y="85">
+                            <get-val-0-8 comment="false" id="0" x="0" y="0"/>
+                        </set-thickness>
+                        <set-stroke-color comment="false" x="37" y="110">
+                            <color b="0" g="0" id="0" r="153"/>
+                        </set-stroke-color>
+                        <draw-line comment="false" x="37" y="137">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-0-5 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-val-0-6 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <get-val-0-19 comment="false" id="2" x="0" y="0"/>
+                            <get-val-0-20 comment="false" id="3" x="0" y="0"/>
+                        </draw-line>
+                        <draw-transtoby comment="false" x="37" y="175">
+                            <int id="0" val="1"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-val-0-19 comment="false" id="0" x="0" y="0"/>
+                                    <get-wh comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="10"/>
+                                        <int id="1" val="2"/>
+                                    </get-wh>
+                                </minus>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <trig-master comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <to-degreesradians comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="1"/>
+                                            <minus comment="false" id="1" x="0" y="0">
+                                                <get-val-0-13 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="90"/>
+                                            </minus>
+                                        </to-degreesradians>
+                                    </trig-master>
+                                    <get-val-0-14 comment="false" id="1" x="0" y="0"/>
+                                </times>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-val-0-20 comment="false" id="0" x="0" y="0"/>
+                                    <get-wh comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="10"/>
+                                        <int id="1" val="3"/>
+                                    </get-wh>
+                                </minus>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <trig-master comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <to-degreesradians comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="1"/>
+                                            <minus comment="false" id="1" x="0" y="0">
+                                                <get-val-0-13 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="90"/>
+                                            </minus>
+                                        </to-degreesradians>
+                                    </trig-master>
+                                    <get-val-0-14 comment="false" id="1" x="0" y="0"/>
+                                </times>
+                            </plus>
+                        </draw-transtoby>
+                        <draw-image-actor comment="false" x="37" y="248">
+                            <ACTOR eid="var" id="0" vid="10"/>
+                        </draw-image-actor>
+                        <to-screen-space comment="false" x="37" y="275"/>
+                        <draw-transtoby comment="false" x="37" y="295">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </draw-transtoby>
+                        <set-thickness comment="false" x="37" y="322">
+                            <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                        </set-thickness>
+                        <set-stroke-color comment="false" x="37" y="347">
+                            <color b="0" g="0" id="0" r="255"/>
+                        </set-stroke-color>
+                        <draw-line comment="false" x="37" y="374">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-0-1 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-val-0-2 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <get-val-0-19 comment="false" id="2" x="0" y="0"/>
+                            <get-val-0-20 comment="false" id="3" x="0" y="0"/>
+                        </draw-line>
+                    </group>
+                    <get-val-0-9 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-0-24 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-24>
+            </group>
+            <int id="0" val="NoCatapultTrue"/>
+        </receive-message>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

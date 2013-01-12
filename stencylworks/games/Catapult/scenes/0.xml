@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="2" desc="" eventsnippetid="12" format="1.0" gravx="-0.0" gravy="50.0" height="320" id="0" name="Catapult Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1376">
+    <layers>
+        <layer color="0,255,0" id="2" name="Layer 2" order="0"/>
+        <layer color="0,0,255" id="1" name="Layer 1" order="1"/>
+    </layers>
+    <grad-bg b1="255" b2="128" g1="204" g2="128" r1="153" r2="128"/>
+    <backgrounds/>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="34" c="false" group="3" id="8" sx="1.0" sy="1.0" x="968" y="115" z="1"/>
+        <actor a="0.0" aid="16" c="false" group="3" id="8" sx="1.0" sy="1.0" x="968" y="190" z="1"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="4" sx="1.0" sy="1.0" x="30" y="194" z="1"/>
+        <actor a="270.0" aid="3" c="false" group="3" id="12" sx="1.0" sy="1.0" x="944" y="272" z="1"/>
+        <actor a="0.0" aid="38" c="false" group="3" id="14" sx="1.0" sy="1.0" x="976" y="83" z="1"/>
+        <actor a="0.0" aid="39" c="false" group="5" id="19" sx="1.0" sy="1.0" x="982" y="154" z="1"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="8" sx="1.0" sy="1.0" x="967" y="249" z="1"/>
+        <actor a="90.0" aid="7" c="false" group="3" id="12" sx="1.0" sy="1.0" x="1009" y="272" z="1"/>
+        <actor a="270.0" aid="12" c="false" group="3" id="12" sx="1.0" sy="1.0" x="977" y="213" z="1"/>
+        <actor a="90.0" aid="28" c="false" group="3" id="8" sx="1.0" sy="1.0" x="992" y="153" z="1"/>
+        <actor a="270.0" aid="31" c="false" group="3" id="8" sx="1.0" sy="1.0" x="945" y="153" z="1"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="2">
+            <prop id="1" list="0" val="true"/>
+            <prop id="2" list="0" val=""/>
+            <prop id="3" list="0" val="41"/>
+            <prop id="4" list="0" val="2"/>
+            <prop id="5" list="0" val="1000"/>
+            <prop id="6" list="0" val="3"/>
+            <prop id="7" list="0" val="56"/>
+            <prop id="8" list="0" val="41"/>
+            <prop id="9" list="0" val=""/>
+            <prop id="10" list="0" val="false"/>
+            <prop id="11" list="0" val="2"/>
+            <prop id="12" list="0" val="1"/>
+            <prop id="13" list="0" val="0"/>
+            <prop id="14" list="0" val="5"/>
+            <prop id="15" list="0" val="false"/>
+            <prop id="17" list="0" val="250"/>
+            <prop id="16" list="0" val="false"/>
+            <prop id="19" list="0" val="48"/>
+            <prop id="21" list="0" val="0"/>
+            <prop id="20" list="0" val="47"/>
+            <prop id="23" list="0" val="41"/>
+            <prop id="22" list="0" val="46"/>
+            <prop id="25" list="0" val="49"/>
+            <prop id="24" list="0" val="0"/>
+            <prop id="27" list="0" val="true"/>
+            <prop id="26" list="0" val=""/>
+            <prop id="29" list="0" val=""/>
+            <prop id="28" list="0" val=""/>
+            <prop id="30" list="0" val="false"/>
+        </s>
+    </snippets>
+    <terrain>
+        <p pts="4,0.0,11.0,0.0,0.0,1376.0,0.0,1376.0,11.0" x="0.0" y="309.0"/>
+    </terrain>
+</scene>

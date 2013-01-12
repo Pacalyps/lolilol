@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<draw comment="false" x="15" y="334">
+<group id="-1"/>
+</draw>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<setx comment="false" x="26" y="113">
+<ACTOR eid="this" id="0"/>
+<max comment="false" id="1" x="0" y="0">
+<int id="0" val="0"/>
+<min comment="false" id="1" x="0" y="0">
+<minus comment="false" id="0" x="0" y="0">
+<mousex comment="false" id="0" x="0" y="0"/>
+<div comment="false" id="1" x="0" y="0">
+<getwidth comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getwidth>
+<int id="1" val="2"/>
+</div>
+</minus>
+<minus comment="false" id="1" x="0" y="0">
+<screenw comment="false" id="0" x="0" y="0"/>
+<getwidth comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getwidth>
+</minus>
+</min>
+</max>
+</setx>
+<sety comment="false" x="26" y="173">
+<ACTOR eid="this" id="0"/>
+<max comment="false" id="1" x="0" y="0">
+<int id="0" val="0"/>
+<min comment="false" id="1" x="0" y="0">
+<minus comment="false" id="0" x="0" y="0">
+<mousey comment="false" id="0" x="0" y="0"/>
+<div comment="false" id="1" x="0" y="0">
+<getheight comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getheight>
+<int id="1" val="2"/>
+</div>
+</minus>
+<minus comment="false" id="1" x="0" y="0">
+<screenh comment="false" id="0" x="0" y="0"/>
+<getheight comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getheight>
+</minus>
+</min>
+</max>
+</sety>
+</group>
+</step>
+</group>
+<group id="2">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<offscreen comment="false" x="26" y="40">
+<int id="0" val="9999"/>
+<int id="1" val="9999"/>
+<int id="2" val="9999"/>
+<int id="3" val="9999"/>
+</offscreen>
+</group>
+</init>
+</group>
+<group id="3">
+<collide comment="false" x="15" y="261">
+<group id="-1"/>
+</collide>
+</group>
+<group id="-1"/>
+</groups>

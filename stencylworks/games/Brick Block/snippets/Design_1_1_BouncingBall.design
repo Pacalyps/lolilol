@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <draw comment="false" x="15" y="1156">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="100">
+            <group id="-1">
+                <if comment="false" x="26" y="125">
+                    <group id="-1">
+                        <set-dxy comment="false" x="37" y="163">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <get-val-1-1 comment="false" id="2" x="0" y="0"/>
+                        </set-dxy>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-dxy>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="207">
+                    <group id="-1">
+                        <set-dxy comment="false" x="37" y="245">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <get-val-1-1 comment="false" id="2" x="0" y="0"/>
+                        </set-dxy>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-dxy>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="289">
+                    <group id="-1">
+                        <set-dxy comment="false" x="37" y="327">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <neg comment="false" id="2" x="0" y="0">
+                                <get-val-1-1 comment="false" id="0" x="0" y="0"/>
+                            </neg>
+                        </set-dxy>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-dxy>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <if comment="false" x="26" y="376">
+                    <group id="-1">
+                        <set-dxy comment="false" x="37" y="414">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <neg comment="false" id="2" x="0" y="0">
+                                <get-val-1-1 comment="false" id="0" x="0" y="0"/>
+                            </neg>
+                        </set-dxy>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-dxy>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <init comment="false" x="15" y="15">
+            <group id="-1">
+                <setvel comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="45"/>
+                    <get-val-1-1 comment="false" id="2" x="0" y="0"/>
+                </setvel>
+            </group>
+        </init>
+    </group>
+    <group id="3">
+        <collide comment="false" x="15" y="491">
+            <group id="-1">
+                <collision-foreach comment="false" x="26" y="516">
+                    <group id="-1">
+                        <if comment="false" x="37" y="536">
+                            <group id="-1">
+                                <comment-long comment="false" x="48" y="584">
+                                    <int id="0" val="Vertical (top/bottom) collision."/>
+                                </comment-long>
+                                <if comment="false" x="48" y="664">
+                                    <group id="-1">
+                                        <set-xy comment="false" x="59" y="697">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <int id="1" val="8"/>
+                                            </plus>
+                                        </set-xy>
+                                    </group>
+                                    <collision-top comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </collision-top>
+                                </if>
+                                <else-if comment="false" x="48" y="754">
+                                    <group id="-1">
+                                        <set-xy comment="false" x="59" y="787">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <minus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <int id="1" val="8"/>
+                                            </minus>
+                                        </set-xy>
+                                    </group>
+                                    <collision-bottom comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </collision-bottom>
+                                </else-if>
+                                <set-dxy comment="false" x="48" y="844">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <neg comment="false" id="2" x="0" y="0">
+                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                        </get-dxy>
+                                    </neg>
+                                </set-dxy>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <or comment="false" id="0" x="0" y="0">
+                                    <collision-top comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </collision-top>
+                                    <collision-bottom comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </collision-bottom>
+                                </or>
+                                <more comment="false" id="1" x="0" y="0">
+                                    <abs comment="false" id="0" x="0" y="0">
+                                        <collision-xynxy comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="2"/>
+                                        </collision-xynxy>
+                                    </abs>
+                                    <abs comment="false" id="1" x="0" y="0">
+                                        <collision-xynxy comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="3"/>
+                                        </collision-xynxy>
+                                    </abs>
+                                </more>
+                            </and>
+                        </if>
+                        <else-if comment="false" x="37" y="901">
+                            <group id="-1">
+                                <comment-long comment="false" x="48" y="949">
+                                    <int id="0" val="Horizontal (left/right) collision."/>
+                                </comment-long>
+                                <if comment="false" x="48" y="1029">
+                                    <group id="-1">
+                                        <set-xy comment="false" x="59" y="1062">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <int id="1" val="8"/>
+                                            </plus>
+                                        </set-xy>
+                                    </group>
+                                    <collision-left comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </collision-left>
+                                </if>
+                                <else-if comment="false" x="48" y="1119">
+                                    <group id="-1">
+                                        <set-xy comment="false" x="59" y="1152">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <minus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <int id="1" val="8"/>
+                                            </minus>
+                                        </set-xy>
+                                    </group>
+                                    <collision-right comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </collision-right>
+                                </else-if>
+                                <set-dxy comment="false" x="48" y="1209">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <neg comment="false" id="2" x="0" y="0">
+                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-dxy>
+                                    </neg>
+                                </set-dxy>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <or comment="false" id="0" x="0" y="0">
+                                    <collision-left comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </collision-left>
+                                    <collision-right comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </collision-right>
+                                </or>
+                                <less comment="false" id="1" x="0" y="0">
+                                    <abs comment="false" id="0" x="0" y="0">
+                                        <collision-xynxy comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="2"/>
+                                        </collision-xynxy>
+                                    </abs>
+                                    <abs comment="false" id="1" x="0" y="0">
+                                        <collision-xynxy comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="3"/>
+                                        </collision-xynxy>
+                                    </abs>
+                                </less>
+                            </and>
+                        </else-if>
+                        <break comment="false" x="37" y="1266"/>
+                    </group>
+                </collision-foreach>
+            </group>
+        </collide>
+    </group>
+    <group id="-1"/>
+</groups>

@@ -1,0 +1,367 @@
+
+
+
+[LOG] Mirroring logs to the standard output...
+[LOG] Response: user::
+[LOG] Logged in as: jojva
+[LOG] Usergroup: Registered
+[ERR] Attempting to log in
+[LOG] Frame was maximized
+[LOG] Connected to StencylTalk as: jojva@stencyl.com/stencyl-1357998118682
+[LOG] Refreshing friends list
+[LOG] Presence changed: apoclyptika@stencyl.com/stencyl-1357996108455 available
+[LOG] 200
+[LOG] 
+[LOG] http://www.stencyl.com/sw/updater/getVersions/stencylworksBeta
+[LOG] HTTP/1.1 200 OK
+<r>
+<server status = '200' version = '1beta' time = '1299439687' />	<version required="true" build="502" name="2.2.0" month="06" day="22" year="12" />
+	<version required="true" build="501" name="2.1.0" month="05" day="25" year="12" />
+	<version required="true" build="500" name="2.0.0" month="04" day="20" year="12" />
+	<version required="false" build="415" name="1.4.1" month="01" day="23" year="12" />
+	<version required="false" build="414" name="1.4.0" month="01" day="22" year="12" />
+	<version required="false" build="413" name="1.3.4" month="12" day="19" year="11" />
+	<version required="false" build="412" name="1.3.3" month="12" day="14" year="11" />
+	<version required="false" build="411" name="1.3.2" month="12" day="12" year="11" />
+	<version required="false" build="410" name="1.3.1" month="12" day="10" year="11" />
+	<version required="false" build="409" name="1.3.0" month="12" day="09" year="11" />
+	<version required="false" build="408" name="1.2.1" month="10" day="27" year="11" />
+	<version required="false" build="407" name="1.2.0" month="10" day="26" year="11" />
+	<version required="false" build="406" name="1.1.1" month="09" day="13" year="11" />
+	<version required="false" build="405" name="1.1.0" month="09" day="08" year="11" />
+	<version required="false" build="404" name="1.0.4" month="07" day="23" year="11" />
+	<version required="false" build="403" name="1.0.3" month="07" day="21" year="11" />
+	<version required="false" build="402" name="1.0.2" month="06" day="30" year="11" />
+	<version required="false" build="401" name="1.0.1" month="05" day="31" year="11" />
+	<version required="false" build="400" name="1.0.0" month="05" day="18" year="11" />
+	<version required="false" build="399" name="0.9.9" month="05" day="18" year="11" />
+</r>
+<r><updateRootUrl value="http://static.stencyl.com/sw/stencylworksBeta/502" /></r>
+[LOG] http://static.stencyl.com/sw/stencylworksBeta/502/html/filelist
+[LOG] HTTP/1.1 200 OK
+[LOG] Action: Import Game...
+[LOG] Action: Preferences...
+[LOG] Choose Folder...
+[LOG] Choose Folder...
+java.lang.NullPointerException
+	at stencyl.sw.prefs.ProxyPage.save(ProxyPage.java:147)
+	at stencyl.sw.prefs.PreferencesDialog.saveSettings(PreferencesDialog.java:371)
+	at stencyl.sw.prefs.PreferencesDialog.access$500(PreferencesDialog.java:43)
+	at stencyl.sw.prefs.PreferencesDialog$6.actionPerformed(PreferencesDialog.java:305)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$000(Unknown Source)
+	at java.awt.EventQueue$1.run(Unknown Source)
+	at java.awt.EventQueue$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$2.run(Unknown Source)
+	at java.awt.EventQueue$2.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.Dialog$1.run(Unknown Source)
+	at java.awt.Dialog$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.Dialog.show(Unknown Source)
+	at java.awt.Component.show(Unknown Source)
+	at java.awt.Component.setVisible(Unknown Source)
+	at java.awt.Window.setVisible(Unknown Source)
+	at java.awt.Dialog.setVisible(Unknown Source)
+	at stencyl.sw.prefs.PreferencesDialog.display(PreferencesDialog.java:356)
+	at stencyl.sw.app.App$28.doTask(App.java:2545)
+	at stencyl.sw.app.App.showPrefs(App.java:2541)
+	at stencyl.sw.app.App.actionPerformed(App.java:502)
+	at stencyl.sw.actions.ActionManager.actionPerformed(ActionManager.java:64)
+	at stencyl.sw.actions.SAction.actionPerformed(SAction.java:119)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.AbstractButton.doClick(Unknown Source)
+	at com.jidesoft.plaf.vsnet.VsnetMenuItemUI.doClick(Unknown Source)
+	at com.jidesoft.plaf.vsnet.VsnetMenuItemUI$MouseInputHandler.mouseReleased(Unknown Source)
+	at java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$000(Unknown Source)
+	at java.awt.EventQueue$1.run(Unknown Source)
+	at java.awt.EventQueue$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$2.run(Unknown Source)
+	at java.awt.EventQueue$2.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+[LOG] The Stencyl workspace is being set to: C:\Users\Joris/AppData/Roaming/Stencyl/
+[LOG] Could not save mobile settings. Skipping.
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\prefs to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\prefs
+[LOG] Copy Duration: 28
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Alien Approach
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\libraries to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Alien Approach\libraries
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\libraries\flash to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Alien Approach\libraries\flash
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\libraries\ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Alien Approach\libraries\ios
+[LOG] Copy Duration: 1
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Alien Approach\linked
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Alien Approach\resources
+[LOG] Copy Duration: 21
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Alien Approach\scenes
+[LOG] Copy Duration: 5
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Alien Approach\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Alien Approach\snippets
+[LOG] Copy Duration: 17
+[LOG] Copy Duration: 70
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Balloons to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Balloons
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Balloons\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Balloons\linked
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Balloons\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Balloons\resources
+[LOG] Copy Duration: 17
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Balloons\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Balloons\scenes
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Balloons\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Balloons\snippets
+[LOG] Copy Duration: 33
+[LOG] Copy Duration: 72
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Book
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\atlases to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Book\atlases
+[LOG] Copy Duration: 14
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\behavior-ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Book\behavior-ios
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Book\linked
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Book\resources
+[LOG] Copy Duration: 10
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Book\scenes
+[LOG] Copy Duration: 8
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Book\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Book\snippets
+[LOG] Copy Duration: 11
+[LOG] Copy Duration: 71
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Brick Block to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Brick Block
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Brick Block\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Brick Block\linked
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Brick Block\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Brick Block\resources
+[LOG] Copy Duration: 27
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Brick Block\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Brick Block\scenes
+[LOG] Copy Duration: 6
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Brick Block\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Brick Block\snippets
+[LOG] Copy Duration: 21
+[LOG] Copy Duration: 71
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\atlases to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult\atlases
+[LOG] Copy Duration: 0
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\behavior-ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult\behavior-ios
+[LOG] Copy Duration: 20
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult\ios
+[LOG] Copy Duration: 8
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\libraries to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult\libraries
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\libraries\flash to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult\libraries\flash
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\libraries\ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult\libraries\ios
+[LOG] Copy Duration: 1
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult\linked
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult\resources
+[LOG] Copy Duration: 45
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult\scenes
+[LOG] Copy Duration: 5
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Catapult\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Catapult\snippets
+[LOG] Copy Duration: 43
+[LOG] Copy Duration: 151
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Crash Course Kit to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Crash Course Kit
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Crash Course Kit\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Crash Course Kit\linked
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Crash Course Kit\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Crash Course Kit\resources
+[LOG] Copy Duration: 16
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Crash Course Kit\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Crash Course Kit\scenes
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Crash Course Kit\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Crash Course Kit\snippets
+[LOG] Copy Duration: 15
+[LOG] Copy Duration: 52
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block\linked
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block\resources
+[LOG] Copy Duration: 13
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block\scenes
+[LOG] Copy Duration: 7
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block\snippets
+[LOG] Copy Duration: 17
+[LOG] Copy Duration: 56
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block Game
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\atlases to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block Game\atlases
+[LOG] Copy Duration: 6
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\behavior-ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block Game\behavior-ios
+[LOG] Copy Duration: 7
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\libraries to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block Game\libraries
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\libraries\flash to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block Game\libraries\flash
+[LOG] Copy Duration: 0
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\libraries\ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block Game\libraries\ios
+[LOG] Copy Duration: 0
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block Game\linked
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block Game\resources
+[LOG] Copy Duration: 22
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block Game\scenes
+[LOG] Copy Duration: 6
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Drop Block Game\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Drop Block Game\snippets
+[LOG] Copy Duration: 23
+[LOG] Copy Duration: 89
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Joystick
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\atlases to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Joystick\atlases
+[LOG] Copy Duration: 6
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\behavior-ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Joystick\behavior-ios
+[LOG] Copy Duration: 11
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\libraries to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Joystick\libraries
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\libraries\flash to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Joystick\libraries\flash
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\libraries\ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Joystick\libraries\ios
+[LOG] Copy Duration: 1
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Joystick\linked
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Joystick\resources
+[LOG] Copy Duration: 44
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Joystick\scenes
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Joystick\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Joystick\snippets
+[LOG] Copy Duration: 19
+[LOG] Copy Duration: 131
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Jump and Run to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Jump and Run
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Jump and Run\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Jump and Run\linked
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Jump and Run\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Jump and Run\resources
+[LOG] Copy Duration: 34
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Jump and Run\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Jump and Run\scenes
+[LOG] Copy Duration: 5
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Jump and Run\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Jump and Run\snippets
+[LOG] Copy Duration: 99
+[LOG] Copy Duration: 162
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Labyrinth
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\atlases to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Labyrinth\atlases
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\behavior-ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Labyrinth\behavior-ios
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Labyrinth\linked
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Labyrinth\resources
+[LOG] Copy Duration: 326
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Labyrinth\scenes
+[LOG] Copy Duration: 6
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Labyrinth\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Labyrinth\snippets
+[LOG] Copy Duration: 262
+[LOG] Copy Duration: 1005
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Lolilol Knight to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Lolilol Knight
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Lolilol Knight\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Lolilol Knight\linked
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Lolilol Knight\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Lolilol Knight\resources
+[LOG] Copy Duration: 3
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Lolilol Knight\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Lolilol Knight\scenes
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Lolilol Knight\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Lolilol Knight\snippets
+[LOG] Copy Duration: 2
+[LOG] Copy Duration: 32
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\atlases to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer\atlases
+[LOG] Copy Duration: 153
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\behavior-ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer\behavior-ios
+[LOG] Copy Duration: 22
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer\ios
+[LOG] Copy Duration: 11
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\libraries to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer\libraries
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\libraries\flash to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer\libraries\flash
+[LOG] Copy Duration: 0
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\libraries\ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer\libraries\ios
+[LOG] Copy Duration: 0
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer\linked
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer\resources
+[LOG] Copy Duration: 37
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer\scenes
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Platformer\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Platformer\snippets
+[LOG] Copy Duration: 36
+[LOG] Copy Duration: 296
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\RPG Town and Dialog
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\libraries to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\RPG Town and Dialog\libraries
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\libraries\flash to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\RPG Town and Dialog\libraries\flash
+[LOG] Copy Duration: 0
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\libraries\ios to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\RPG Town and Dialog\libraries\ios
+[LOG] Copy Duration: 0
+[LOG] Copy Duration: 2
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\RPG Town and Dialog\linked
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\RPG Town and Dialog\resources
+[LOG] Copy Duration: 29
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\RPG Town and Dialog\scenes
+[LOG] Copy Duration: 6
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\RPG Town and Dialog\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\RPG Town and Dialog\snippets
+[LOG] Copy Duration: 14
+[LOG] Copy Duration: 72
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Run and Gun Example Game to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Run and Gun Example Game
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Run and Gun Example Game\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Run and Gun Example Game\linked
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Run and Gun Example Game\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Run and Gun Example Game\resources
+[LOG] Copy Duration: 42
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Run and Gun Example Game\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Run and Gun Example Game\scenes
+[LOG] Copy Duration: 4
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Run and Gun Example Game\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Run and Gun Example Game\snippets
+[LOG] Copy Duration: 45
+[LOG] Copy Duration: 108
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Space Shooter to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Space Shooter
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Space Shooter\linked to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Space Shooter\linked
+[LOG] Copy Duration: 1
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Space Shooter\resources to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Space Shooter\resources
+[LOG] Copy Duration: 92
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Space Shooter\scenes to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Space Shooter\scenes
+[LOG] Copy Duration: 6
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\games\Space Shooter\snippets to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\games\Space Shooter\snippets
+[LOG] Copy Duration: 120
+[LOG] Copy Duration: 312
+[LOG] Copy Duration: 2756
+[LOG] Copy directory from: C:\Users\Joris\AppData\Roaming\Stencyl\stencylworks\logs to: C:\Users\Joris\Desktop\Git\lolilol\stencylworks\logs

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet attachedevent="false" class="scripts.Design_0_0_ClicktoAdvance" desc="" description="" design="true" drawOrder="0" id="0" language="" name="Click to Advance" oid="-1" package="" scenespecific="false" shared="false" type="scene">
+        <scene default="" desc="" dropdown="" fullname="Next" hidden="false" id="1" name="_Next" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_1_1_AtlasManager" desc="" description="" design="true" drawOrder="0" id="1" language="" name="Atlas Manager" oid="-1" package="" scenespecific="false" shared="false" type="scene">
+        <list default="list" desc="" dropdown="" fullname="To Unload" hidden="false" id="1" name="_ToUnload" order="0"/>
+        <list default="list" desc="" dropdown="" fullname="To Load" hidden="false" id="2" name="_ToLoad" order="1"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="2" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="3" language="" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+</pack>

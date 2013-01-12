@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="-1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-10-1 comment="false" x="26" y="40">
+                    <randint comment="false" id="0" x="0" y="0">
+                        <int id="0" val="100"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="100"/>
+                        </minus>
+                    </randint>
+                </set-val-10-1>
+                <set-val-10-2 comment="false" x="26" y="83">
+                    <randint comment="false" id="0" x="0" y="0">
+                        <int id="0" val="100"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </scene-wh>
+                            <int id="1" val="100"/>
+                        </minus>
+                    </randint>
+                </set-val-10-2>
+                <ignore-screen-tolerance comment="false" x="26" y="126">
+                    <ACTOR eid="this" id="0"/>
+                </ignore-screen-tolerance>
+            </group>
+        </init>
+    </group>
+    <group eventID="-1" id="1">
+        <step comment="false" x="15" y="181">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="206">
+                    <group eventID="-1" id="-1">
+                        <set-val-10-1 comment="false" x="37" y="259">
+                            <randint comment="false" id="0" x="0" y="0">
+                                <int id="0" val="100"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </scene-wh>
+                                    <int id="1" val="100"/>
+                                </minus>
+                            </randint>
+                        </set-val-10-1>
+                        <set-val-10-2 comment="false" x="37" y="302">
+                            <randint comment="false" id="0" x="0" y="0">
+                                <int id="0" val="100"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </scene-wh>
+                                    <int id="1" val="100"/>
+                                </minus>
+                            </randint>
+                        </set-val-10-2>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <int id="0" val="9216"/>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <pow comment="false" id="0" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-val-10-1 comment="false" id="0" x="0" y="0"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="2"/>
+                                    </get-xy>
+                                </minus>
+                                <int id="1" val="2"/>
+                            </pow>
+                            <pow comment="false" id="1" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-val-10-2 comment="false" id="0" x="0" y="0"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="3"/>
+                                    </get-xy>
+                                </minus>
+                                <int id="1" val="2"/>
+                            </pow>
+                        </plus>
+                    </more>
+                </if>
+                <set-dxy comment="false" x="26" y="357">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-dxy>
+                        <times comment="false" id="1" x="0" y="0">
+                            <trig-master comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                                <atan2 comment="false" id="1" x="0" y="0">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-val-10-2 comment="false" id="0" x="0" y="0"/>
+                                        <get-xy comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="3"/>
+                                        </get-xy>
+                                    </minus>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-val-10-1 comment="false" id="0" x="0" y="0"/>
+                                        <get-xy comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="2"/>
+                                        </get-xy>
+                                    </minus>
+                                </atan2>
+                            </trig-master>
+                            <int id="1" val="0.07"/>
+                        </times>
+                    </plus>
+                </set-dxy>
+                <set-dxy comment="false" x="26" y="430">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-dxy>
+                        <times comment="false" id="1" x="0" y="0">
+                            <trig-master comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <atan2 comment="false" id="1" x="0" y="0">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-val-10-2 comment="false" id="0" x="0" y="0"/>
+                                        <get-xy comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="3"/>
+                                        </get-xy>
+                                    </minus>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-val-10-1 comment="false" id="0" x="0" y="0"/>
+                                        <get-xy comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="2"/>
+                                        </get-xy>
+                                    </minus>
+                                </atan2>
+                            </trig-master>
+                            <int id="1" val="0.07"/>
+                        </times>
+                    </plus>
+                </set-dxy>
+                <setangle comment="false" x="26" y="503">
+                    <ACTOR eid="this" id="0"/>
+                    <plus comment="false" id="1" x="0" y="0">
+                        <to-degreesradians comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <atan2 comment="false" id="1" x="0" y="0">
+                                <get-dxy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-dxy>
+                                <get-dxy comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-dxy>
+                            </atan2>
+                        </to-degreesradians>
+                        <int id="1" val="90"/>
+                    </plus>
+                </setangle>
+                <set-dxy comment="false" x="26" y="566">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-dxy>
+                        <int id="1" val="0.995"/>
+                    </times>
+                </set-dxy>
+                <set-dxy comment="false" x="26" y="611">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-dxy>
+                        <int id="1" val="0.995"/>
+                    </times>
+                </set-dxy>
+                <setav comment="false" x="26" y="656">
+                    <ACTOR eid="this" id="0"/>
+                    <times comment="false" id="1" x="0" y="0">
+                        <getangvel comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getangvel>
+                        <int id="1" val="0.995"/>
+                    </times>
+                </setav>
+            </group>
+        </step>
+    </group>
+    <group eventID="-1" id="2">
+        <collide comment="false" x="15" y="729">
+            <group eventID="-1" id="-1"/>
+        </collide>
+    </group>
+    <group eventID="-1" id="3">
+        <draw comment="false" x="15" y="802">
+            <group eventID="-1" id="-1"/>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>
