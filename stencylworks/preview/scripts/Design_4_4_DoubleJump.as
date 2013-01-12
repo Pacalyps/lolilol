@@ -105,7 +105,7 @@ if(wrapper.enabled){
 {
                 if((Math.abs(Math.round(GameState.toPixelUnits(point.normal.y))) > 0.1))
 {
-                    actor.setActorValue("On Ground?", true);
+                    actor.setActorValue("On Ground?", false);
 }
 
 }

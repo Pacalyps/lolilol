@@ -145,8 +145,8 @@ nameMap["Speed"] = "_Speed";
 nameMap["Left Animation (Idle)"] = "_LeftAnimationIdle";
 nameMap["Stop Turning"] = "_StopTurning";
 nameMap["Right Animation"] = "_RightAnimation";
-nameMap["Use Animations"] = "_UseAnimations";
 nameMap["Actor"] = "actor";
+nameMap["Use Animations"] = "_UseAnimations";
 
 		}
 		

@@ -17,6 +17,8 @@
     <packs/>
     <groups/>
     <cgroups>
+        <cgroup g1="1" g2="3"/>
+        <cgroup g1="1" g2="0"/>
         <cgroup g1="3" g2="3"/>
     </cgroups>
     <input>

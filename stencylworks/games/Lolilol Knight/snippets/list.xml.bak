@@ -7,6 +7,10 @@
             <event displayName="Created" enabled="true" id="2" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="1" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_2_2_2WayHorizontalMovement" desc="Allows the actor to move left and right." description="Allows the actor to move left and right." design="true" drawOrder="0" id="2" language="" name="2 Way Horizontal Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <control default="" desc="" dropdown="" fullname="Right Control" hidden="false" id="34" name="_RightControl" order="5"/>
         <control default="" desc="" dropdown="" fullname="Left Control" hidden="false" id="33" name="_LeftControl" order="4"/>
@@ -20,8 +24,8 @@
         <animation default="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
         <boolean default="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
         <animation default="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
-        <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
@@ -52,14 +56,6 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_5_5_TestBehaviourDesign" desc="" description="" design="true" drawOrder="0" id="5" language="" name="Test_Behaviour_Design" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="1" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="1" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events/>
     </snippet>

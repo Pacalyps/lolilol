@@ -54,6 +54,7 @@ public var r2_1:Bitmap;
 public var r2_2:Bitmap;
 public var r2_3:Bitmap;
 public var r2_4:Bitmap;
+public var r3:Bitmap;
 
 		
 		
@@ -99,6 +100,7 @@ loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resource
 loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources/2-2.png", "r2_2");
 loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources/2-3.png", "r2_3");
 loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources/2-4.png", "r2_4");
+loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources/3.png", "r3");
 
 			}
 			
@@ -275,6 +277,7 @@ a.resourceAssets["2-1.png"] = r2_1;
 a.resourceAssets["2-2.png"] = r2_2;
 a.resourceAssets["2-3.png"] = r2_3;
 a.resourceAssets["2-4.png"] = r2_4;
+a.resourceAssets["3.png"] = r3;
 
 		}
 		

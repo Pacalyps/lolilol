@@ -10,7 +10,7 @@
         <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="117" id="2" loop="true" name="Up_Walk_Knight" numframes="4" originx="80" originy="58" width="640">
             <poly data="4,45,6,95,6,95,106,45,106" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="117" id="3" loop="true" name="Left_Sword" numframes="4" originx="80" originy="58" width="640">
+        <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="32" id="3" loop="true" name="Left_Sword" numframes="4" originx="80" originy="58" width="128">
             <poly data="4,48,4,98,4,98,104,48,104" density="0.1" fric="0.2" gid="-1000" id="0" name="Copy of Copy of Copy of Animation 0" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="117" id="4" loop="true" name="Right_Sword" numframes="4" originx="80" originy="58" width="640">
@@ -37,25 +37,16 @@
             </s>
             <s enabled="true" id="4">
                 <prop id="1" list="0" val="up"/>
-                <prop id="2" list="0" val="50"/>
+                <prop id="2" list="0" val="100"/>
                 <prop id="3" list="0" val="No Sound"/>
                 <prop id="4" list="0" val="Right_Walk_Knight"/>
                 <prop id="5" list="0" val="Left_Walk_Knight"/>
                 <prop id="6" list="0" val="false"/>
-                <prop id="7" list="0" val="20"/>
+                <prop id="7" list="0" val="100"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
-    <custom-block blocktag="custom-3" blocktype="ACTION" code="~.say(&quot;Double Jump&quot;, &quot;LoopAnim&quot;, ~,~);" desc="" global="false" gui="Loop %1 for %0 Using %2" id="3" message="LoopAnim" name="LoopAnim" oid="-1" return="VOID" shared="false" snippetID="4">
-        <blank name="Self" order="0" type="ACTOR"/>
-        <blank name="Animation" order="1" type="ANIMATION"/>
-        <blank name="Category" order="2" type="TEXT"/>
-    </custom-block>
-    <custom-block blocktag="custom-4" blocktype="ACTION" code="~.say(&quot;Double Jump&quot;, &quot;PlayOnce&quot;, ~);" desc="" global="false" gui="Play %1 Once for %0" id="4" message="PlayOnce" name="PlayOnce" oid="-1" return="VOID" shared="false" snippetID="4">
-        <blank name="Self" order="0" type="ACTOR"/>
-        <blank name="Animation" order="1" type="ANIMATION"/>
-    </custom-block>
     <tileset across="25" atlasID="0" desc="" down="18" id="3" name="Level 01" oid="-1" shared="false" th="96" tw="96">
         <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
@@ -508,6 +499,10 @@
         <tile collision="1" data="" durations="100" frames="448" id="448" order="-1"/>
         <tile collision="1" data="" durations="100" frames="449" id="449" order="-1"/>
     </tileset>
+    <custom-block blocktag="custom-4" blocktype="ACTION" code="~.say(&quot;Double Jump&quot;, &quot;PlayOnce&quot;, ~);" desc="" global="false" gui="Play %1 Once for %0" id="4" message="PlayOnce" name="PlayOnce" oid="-1" return="VOID" shared="false" snippetID="4">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Animation" order="1" type="ANIMATION"/>
+    </custom-block>
     <tileset across="1" atlasID="0" desc="" down="1" id="0" name="Sol test" oid="-1" shared="false" th="96" tw="96">
         <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
     </tileset>
