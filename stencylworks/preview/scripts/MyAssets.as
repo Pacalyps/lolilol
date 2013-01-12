@@ -54,6 +54,7 @@ public var r2_1:Bitmap;
 public var r2_2:Bitmap;
 public var r2_3:Bitmap;
 public var r2_4:Bitmap;
+public var r3:Bitmap;
 
 		
 		
@@ -87,18 +88,19 @@ private var scene0b:ByteArray;
 
 			if(remote)
 			{
-				loadExternalResource("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/game.xml", "GameXML");
-loadExternalResource("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/scenes.xml", "SceneList");
-loadExternalResource("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/behaviors.xml", "BehaviorList");
-loadExternalResource("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources.xml", "ResourceList");
-loadExternalResource("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/scenes/0.xml", "scene0");
-loadExternalResource("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/scenes/0.scn", "scene0b");
-loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources/0.png", "r0");
-loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources/2-0.png", "r2_0");
-loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources/2-1.png", "r2_1");
-loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources/2-2.png", "r2_2");
-loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources/2-3.png", "r2_3");
-loadImage("C:/Users/Joris/Desktop/Git/lolilol/stencylworks/preview/game/resources/2-4.png", "r2_4");
+				loadExternalResource("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/game.xml", "GameXML");
+loadExternalResource("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/scenes.xml", "SceneList");
+loadExternalResource("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/behaviors.xml", "BehaviorList");
+loadExternalResource("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/resources.xml", "ResourceList");
+loadExternalResource("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/scenes/0.xml", "scene0");
+loadExternalResource("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/scenes/0.scn", "scene0b");
+loadImage("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/resources/0.png", "r0");
+loadImage("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/resources/2-0.png", "r2_0");
+loadImage("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/resources/2-1.png", "r2_1");
+loadImage("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/resources/2-2.png", "r2_2");
+loadImage("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/resources/2-3.png", "r2_3");
+loadImage("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/resources/2-4.png", "r2_4");
+loadImage("C:/Users/Anthony Teixeira/Desktop/git/lolilol/stencylworks/preview/game/resources/3.png", "r3");
 
 			}
 			
@@ -275,6 +277,7 @@ a.resourceAssets["2-1.png"] = r2_1;
 a.resourceAssets["2-2.png"] = r2_2;
 a.resourceAssets["2-3.png"] = r2_3;
 a.resourceAssets["2-4.png"] = r2_4;
+a.resourceAssets["3.png"] = r3;
 
 		}
 		

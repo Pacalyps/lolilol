@@ -3,55 +3,10 @@
     <snippet attachedevent="true" class="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="0" language="" name="ActorEvents_1" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events>
-            <event displayName="Updated" enabled="true" id="1" name="step" order="2" repeats="true"/>
-            <event displayName="Created" enabled="true" id="2" name="init" order="1" repeats="true"/>
-        </events>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_2_2_2WayHorizontalMovement" desc="Allows the actor to move left and right." description="Allows the actor to move left and right." design="true" drawOrder="0" id="2" language="" name="2 Way Horizontal Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <control default="" desc="" dropdown="" fullname="Right Control" hidden="false" id="34" name="_RightControl" order="5"/>
-        <control default="" desc="" dropdown="" fullname="Left Control" hidden="false" id="33" name="_LeftControl" order="4"/>
-        <boolean default="true" desc="If selected, the control attributes will be used to control the movement.&lt;br /&gt;&#10;If unselected, the control attributes are ignored and the movement can be controlled by triggering custom events. &#10;Trigger the events &lt;var&gt;MoveLeft&lt;/var&gt; or &lt;var&gt;MoveRight&lt;/var&gt; to make the actor move as if the keys were pressed." dropdown="" fullname="Use Controls" hidden="false" id="38" name="_UseControls" order="3"/>
-        <boolean default="false" desc="If selected, the actor will not be able to move vertically." dropdown="" fullname="Prevent Vertical Movement" hidden="false" id="39" name="_PreventVerticalMovement" order="7"/>
-        <number default="0" desc="" dropdown="" fullname="Move X" hidden="true" id="37" name="_MoveX" order="1"/>
-        <animation default="" desc="" dropdown="" fullname="Left Animation" hidden="false" id="42" name="_LeftAnimation" order="11"/>
-        <animation default="" desc="" dropdown="" fullname="Right Animation (Idle)" hidden="false" id="43" name="_RightAnimationIdle" order="12"/>
-        <number default="0.0" desc="" dropdown="" fullname="Start Y" hidden="true" id="40" name="_StartY" order="2"/>
-        <number default="30.0" desc="The speed of the movement." dropdown="" fullname="Speed" hidden="false" id="11" name="_Speed" order="6"/>
-        <animation default="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
-        <boolean default="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
-        <animation default="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
-        <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks/>
-        <events>
-            <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
-            <event displayName="Custom Event" enabled="true" id="4" name="event-custom" order="6" repeats="true"/>
-            <event displayName="Custom Event" enabled="true" id="5" name="event-custom" order="7" repeats="true"/>
-            <event displayName="Created" enabled="true" id="6" name="init" order="3" repeats="true"/>
-        </events>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="3" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_4_4_DoubleJump" desc="Jump ! Twice!" description="Jump ! Twice!" design="true" drawOrder="0" id="4" language="" name="Double Jump" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <control default="" desc="Select the key used for jumping." dropdown="" fullname="Jump Key" hidden="false" id="1" name="_JumpKey" order="1"/>
-        <number default="25.0" desc="" dropdown="" fullname="Jump Force" hidden="false" id="2" name="_JumpForce" order="2"/>
-        <sound default="" desc="" dropdown="" fullname="Jump Sound" hidden="false" id="3" name="_JumpSound" order="3"/>
-        <animation default="" desc="Animation used for jumping to the right." dropdown="" fullname="Jump Right Animation" hidden="false" id="4" name="_JumpRightAnimation" order="4"/>
-        <animation default="" desc="Animation used for jumping to the left." dropdown="" fullname="Jump Left Animation" hidden="false" id="5" name="_JumpLeftAnimation" order="5"/>
-        <boolean default="false" desc="" dropdown="" fullname="Air Jumped?" hidden="true" id="6" name="_AirJumped" order="6"/>
-        <number default="30" desc="" dropdown="" fullname="AirJump Force" hidden="false" id="7" name="_AirJumpForce" order="7"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks/>
-        <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
-            <event displayName="Actor - Any" enabled="true" id="3" name="collide" order="3" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_5_5_TestBehaviourDesign" desc="" description="" design="true" drawOrder="0" id="5" language="" name="Test_Behaviour_Design" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="1" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events/>
     </snippet>

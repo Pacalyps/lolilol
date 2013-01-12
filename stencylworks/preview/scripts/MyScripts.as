@@ -6,10 +6,7 @@ package scripts
 		MyAssets;
 		
 		ActorEvents_1;
-Design_2_2_2WayHorizontalMovement;
 SceneEvents_0;
-Design_4_4_DoubleJump;
-Design_5_5_TestBehaviourDesign;
 
 	}
 }
