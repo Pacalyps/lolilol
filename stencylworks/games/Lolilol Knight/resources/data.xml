@@ -2,22 +2,22 @@
 <pack>
     <sprite atlasID="0" default="0" desc="" height="117" id="2" name="Knight" shared="false" width="160">
         <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="117" id="0" loop="true" name="Left_Walk_Knight" numframes="4" originx="80" originy="58" width="640">
-            <poly data="4,45,10,95,10,95,110,45,110" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,46,3,96,3,96,108,46,108" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="117" id="1" loop="true" name="Right_Walk_Knight" numframes="4" originx="80" originy="58" width="640">
-            <poly data="4,58,9,108,9,108,109,58,109" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,59,3,109,3,109,108,59,108" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="117" id="2" loop="true" name="Up_Walk_Knight" numframes="4" originx="80" originy="58" width="640">
-            <poly data="4,45,6,95,6,95,106,45,106" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,48,0,98,0,98,105,48,105" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="32" id="3" loop="true" name="Left_Sword" numframes="4" originx="80" originy="58" width="128">
-            <poly data="4,48,4,98,4,98,104,48,104" density="0.1" fric="0.2" gid="-1000" id="0" name="Copy of Copy of Copy of Animation 0" rest="0.0" sensor="false"/>
+        <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="117" id="3" loop="true" name="Left_Sword" numframes="4" originx="80" originy="58" width="640">
+            <poly data="4,48,0,98,0,98,104,48,104" density="0.1" fric="0.2" gid="-1000" id="0" name="Copy of Copy of Copy of Animation 0" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="117" id="4" loop="true" name="Right_Sword" numframes="4" originx="80" originy="58" width="640">
-            <poly data="4,60,4,110,4,110,104,60,104" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,58,0,108,0,108,104,58,104" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="0" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Knight" oid="-1" pausable="true" rest="0.0" shared="false" sprite="2" static="false" touchable="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="0" fixedrot="false" fric="0.2" gid="3" id="1" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Knight" oid="-1" pausable="true" rest="0.0" shared="false" sprite="2" static="false" touchable="true">
         <snippets>
             <s enabled="true" id="2">
                 <prop id="34" list="0" val="right"/>
@@ -25,13 +25,13 @@
                 <prop id="38" list="0" val="true"/>
                 <prop id="39" list="0" val="false"/>
                 <prop id="37" list="0" val="0"/>
-                <prop id="42" list="0" val="Left_Walk_Knight"/>
-                <prop id="43" list="0" val="Right_Walk_Knight"/>
+                <prop id="42" list="0" val=""/>
+                <prop id="43" list="0" val=""/>
                 <prop id="40" list="0" val="0.0"/>
                 <prop id="11" list="0" val="30.0"/>
-                <prop id="41" list="0" val="Left_Walk_Knight"/>
+                <prop id="41" list="0" val=""/>
                 <prop id="46" list="0" val="true"/>
-                <prop id="44" list="0" val="Right_Walk_Knight"/>
+                <prop id="44" list="0" val=""/>
                 <prop id="45" list="0" val="true"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -53,7 +53,7 @@
         <tile collision="1" data="" durations="100" frames="2" id="2" order="-1"/>
         <tile collision="1" data="" durations="100" frames="3" id="3" order="-1"/>
         <tile collision="1" data="" durations="100" frames="4" id="4" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="5" id="5" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="5" id="5" order="-1"/>
         <tile collision="1" data="" durations="100" frames="6" id="6" order="-1"/>
         <tile collision="1" data="" durations="100" frames="7" id="7" order="-1"/>
         <tile collision="1" data="" durations="100" frames="8" id="8" order="-1"/>
@@ -79,12 +79,12 @@
         <tile collision="-1" data="" durations="100" frames="28" id="28" order="-1"/>
         <tile collision="1" data="" durations="100" frames="29" id="29" order="-1"/>
         <tile collision="1" data="" durations="100" frames="30" id="30" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="31" id="31" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="32" id="32" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="33" id="33" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="34" id="34" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="35" id="35" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="36" id="36" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="31" id="31" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="32" id="32" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="33" id="33" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="34" id="34" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="35" id="35" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="36" id="36" order="-1"/>
         <tile collision="1" data="" durations="100" frames="37" id="37" order="-1"/>
         <tile collision="1" data="" durations="100" frames="38" id="38" order="-1"/>
         <tile collision="1" data="" durations="100" frames="39" id="39" order="-1"/>
@@ -101,15 +101,15 @@
         <tile collision="1" data="" durations="100" frames="50" id="50" order="-1"/>
         <tile collision="1" data="" durations="100" frames="51" id="51" order="-1"/>
         <tile collision="1" data="" durations="100" frames="52" id="52" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="53" id="53" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="53" id="53" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="54" id="54" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="55" id="55" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="56" id="56" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="57" id="57" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="58" id="58" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="59" id="59" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="60" id="60" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="61" id="61" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="56" id="56" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="57" id="57" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="58" id="58" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="59" id="59" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="60" id="60" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="61" id="61" order="-1"/>
         <tile collision="1" data="" durations="100" frames="62" id="62" order="-1"/>
         <tile collision="1" data="" durations="100" frames="63" id="63" order="-1"/>
         <tile collision="1" data="" durations="100" frames="64" id="64" order="-1"/>
@@ -129,12 +129,12 @@
         <tile collision="1" data="" durations="100" frames="78" id="78" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="79" id="79" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="80" id="80" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="81" id="81" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="82" id="82" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="83" id="83" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="84" id="84" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="85" id="85" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="86" id="86" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="81" id="81" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="82" id="82" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="83" id="83" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="84" id="84" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="85" id="85" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="86" id="86" order="-1"/>
         <tile collision="1" data="" durations="100" frames="87" id="87" order="-1"/>
         <tile collision="1" data="" durations="100" frames="88" id="88" order="-1"/>
         <tile collision="1" data="" durations="100" frames="89" id="89" order="-1"/>
@@ -154,12 +154,12 @@
         <tile collision="1" data="" durations="100" frames="103" id="103" order="-1"/>
         <tile collision="1" data="" durations="100" frames="104" id="104" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="105" id="105" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="106" id="106" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="107" id="107" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="108" id="108" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="109" id="109" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="110" id="110" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="111" id="111" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="106" id="106" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="107" id="107" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="108" id="108" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="109" id="109" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="110" id="110" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="111" id="111" order="-1"/>
         <tile collision="1" data="" durations="100" frames="112" id="112" order="-1"/>
         <tile collision="1" data="" durations="100" frames="113" id="113" order="-1"/>
         <tile collision="1" data="" durations="100" frames="114" id="114" order="-1"/>
@@ -223,10 +223,10 @@
         <tile collision="1" data="" durations="100" frames="172" id="172" order="-1"/>
         <tile collision="1" data="" durations="100" frames="173" id="173" order="-1"/>
         <tile collision="1" data="" durations="100" frames="174" id="174" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="175" id="175" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="176" id="176" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="177" id="177" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="178" id="178" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="175" id="175" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="176" id="176" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="177" id="177" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="178" id="178" order="-1"/>
         <tile collision="1" data="" durations="100" frames="179" id="179" order="-1"/>
         <tile collision="1" data="" durations="100" frames="180" id="180" order="-1"/>
         <tile collision="1" data="" durations="100" frames="181" id="181" order="-1"/>
@@ -250,8 +250,8 @@
         <tile collision="1" data="" durations="100" frames="199" id="199" order="-1"/>
         <tile collision="1" data="" durations="100" frames="200" id="200" order="-1"/>
         <tile collision="1" data="" durations="100" frames="201" id="201" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="202" id="202" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="203" id="203" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="202" id="202" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="203" id="203" order="-1"/>
         <tile collision="1" data="" durations="100" frames="204" id="204" order="-1"/>
         <tile collision="1" data="" durations="100" frames="205" id="205" order="-1"/>
         <tile collision="1" data="" durations="100" frames="206" id="206" order="-1"/>
@@ -275,8 +275,8 @@
         <tile collision="1" data="" durations="100" frames="224" id="224" order="-1"/>
         <tile collision="1" data="" durations="100" frames="225" id="225" order="-1"/>
         <tile collision="1" data="" durations="100" frames="226" id="226" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="227" id="227" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="228" id="228" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="227" id="227" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="228" id="228" order="-1"/>
         <tile collision="1" data="" durations="100" frames="229" id="229" order="-1"/>
         <tile collision="1" data="" durations="100" frames="230" id="230" order="-1"/>
         <tile collision="1" data="" durations="100" frames="231" id="231" order="-1"/>

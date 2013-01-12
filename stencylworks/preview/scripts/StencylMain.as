@@ -24,7 +24,7 @@ package scripts
 			GameState.username = "jojva";GameState.password = "860d795f2adf93a62d59001f5ad67c3e96651375";
 	
 			GameState.numLeft = 13;
-			GameState.initSceneID = 0;
+			GameState.initSceneID = -1;
 			Profiler.init(stage, this);
 			
 			addEventListener(Event.ADDED_TO_STAGE, init);

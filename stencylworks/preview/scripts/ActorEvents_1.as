@@ -35,12 +35,7 @@ package scripts
      
     override public function init():void
     {
-                  getCamera().setLocation(actor.getX(), actor.getY());
-    addWhenUpdatedListener(null, function(list:Array):void {
-if(wrapper.enabled){
-        getCamera().setLocation(actor.getX(), actor.getY());
-}
-});
+                  scene.cameraFollow(actor);
 
     }	      	
 		
